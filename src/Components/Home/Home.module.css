@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container_home{
+    width: 95vw;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.content1_home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 550px;
+    height: 400px;
+    margin: auto;
+}
+.h1_home{
+    font-size: 50px;
+    font-family: "Noto Serif", serif;
+}
+
+.btn_home{
+    background-color: #FF7D29;
+   border-radius: 5px;
+   font-weight: bold;
+   color: white;
+  border:  #FF7D29;
+  width: 150px;
+  height: 40px;
+  box-shadow:0 4px rgba(56, 52, 52, 0.391) inset ;
+}
+.content2_home{
+    width: 790px;
+    height: 500px;
+    /* background-color: aquamarine; */
+}
+.content2box_home{
+    position: relative;
+    width: 770px;
+    height: 500px;
+
+}
+.women_home{
+    position: absolute;
+    top: 65px;
+    right: 265px;
+   
+   
+}
+
+.circle_home{
+    position: absolute;
+    top: 100px;
+    right: 230px;
+     z-index: -1;
+    
+}
+.gearb_home{
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+    
+    }
+.gears_home{
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    
+    }
+.line_home{
+    position: absolute;
+    bottom: 10px;
+    left: 325px;
+    /* color: green; */
+    /* background-color: black; */
+    /* width: 40%;
+    height: 20%; */
+    }
+.bar_home{
+    position: absolute;
+    
+    }
+.curve_home{
+    position: absolute;
+    top: 50px;
+    right: 150px;
+}

@@ -1,0 +1,17 @@
+.container_colfirst{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    /* background-color: aqua; */
+    gap: 10px;
+    font-size: 16px;
+   /* border: 1px solid red; */
+}
+.img_colfirst{
+    width: 40%;
+}
+.logo_colfirst{
+    margin-top: 15px;
+    display: flex;
+   gap: 20px;
+}

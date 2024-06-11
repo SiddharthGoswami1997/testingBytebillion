@@ -1,0 +1,18 @@
+.container_footer{
+    display: flex;
+    width: 95vw;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.box_footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+}
+.colfirst_footer{
+
+}

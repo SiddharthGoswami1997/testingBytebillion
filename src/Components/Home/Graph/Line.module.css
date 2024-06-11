@@ -1,0 +1,52 @@
+.container_line{
+    width: 320px;
+    height: 100px;
+   border-radius: 10px;
+   /* border: 2px solid red; */
+   box-shadow: 2px 5px 7px 1px rgba(0, 0, 0, 0.2) inset;      display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+    z-index: 2;
+    background-color: white;
+   padding-left: 20px; 
+}
+.horizontalbar_line{
+    width: 300px;
+    height: 20px;
+    box-shadow: 2px 5px 7px 1px rgba(0, 0, 0, 0.2) inset;      
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    /* background-color: green; */
+}
+.greenbar_line{
+    width: 270px;
+    height: 90%;
+    /* border-radius: 50px; */
+    background: #26CF8E;
+    transition: width 2s;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 2px 5px 7px 1px rgba(0, 0, 0, 0.2) inset;      
+    animation: scale 2s linear 1;
+    transform-origin: left;
+} 
+  
+
+
+@keyframes scale {
+0% {
+  transform: scaleX(30%);
+}
+50% {
+  transform: scaleX(70%);
+}
+100% {
+  transform: scaleX(100%);
+}
+}
+
+
+
+
+
+
