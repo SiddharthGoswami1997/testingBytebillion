@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import styles from './Career.module.css'
 
 import Together from './Components2/Together/Together'
@@ -9,6 +9,9 @@ import Hiring from './Components2/Hiring/Hiring'
 import CareerArea from './Components2/CareerArea/CareerArea'
 
 const Career = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
   return (
     <div className={styles.container_career}>
       <Together/>
@@ -16,7 +19,7 @@ const Career = () => {
       <Ourvalues/>
      <Employeebenefit/>
         <Hiring/>
-     {/* <CareerArea/> */}
+     <CareerArea/>
       
     </div>
   )

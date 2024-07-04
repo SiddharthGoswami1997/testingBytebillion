@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import styles from "./Home.module.css";
 import Line from "./Graph/Line";
 import AboutUs from "../AboutUs/AboutUs";
@@ -8,6 +8,10 @@ import Testimonial from "../Testimonial/Testimonial";
 import Bstracker from "./Graph/Bstracker/Bstracker";
 import Totalproject from "./Graph/Totalproject/Totalproject"
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
+
   return (
     <>
       <section className={styles.container_home}>
@@ -54,7 +58,7 @@ const Home = () => {
 
        <AboutUs />
     <Projects />
-    <Testimonial/>
+    {/* <Testimonial/> */}
        <FAQ />
     </>
   );

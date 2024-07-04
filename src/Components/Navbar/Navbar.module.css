@@ -176,13 +176,13 @@
       .Hamburgerbtn_navbar{
         display: block;
 
-        background-color: #1F3255;
+        background-color:  #FF7D29;
         border-radius: 10px;
         font-weight: bold;
         color: white;
        border:  #1F3255;
        width: 90px;
-       height: 40px;
+       height: 30px;
        box-shadow:0 4px 4px 0 #0000003d ;
        font-size: 10px;
         font-weight: 700;

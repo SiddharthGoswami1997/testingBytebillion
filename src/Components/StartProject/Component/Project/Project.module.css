@@ -131,7 +131,18 @@ visibility: hidden;
 }
 
 .btn_project{
+
     background-color: #FF7D29;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+   border:  #1F3255;
+   width: 150px;
+   height: 40px;
+   box-shadow:0 4px 4px 0 #0000003d ;
+
+
+    /* background-color: #FF7D29;
    border-radius: 16px;
    font-weight: bold;
    color: white;
@@ -139,7 +150,7 @@ visibility: hidden;
   width: 150px;
   height: 40px;
   box-shadow:0 4px rgba(56, 52, 52, 0.331) inset ;
-  
+   */
 }
 @media screen and (max-width:660px) {
     .container_project{

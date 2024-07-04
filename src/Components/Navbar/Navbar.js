@@ -44,7 +44,7 @@ const [showIcon, setShowIcon ] = useState(false)
             </ul>
         </div>
        
-       <button className={styles.Hamburgerbtn_navbar}><Link className={styles.btnlinktext}  to={'/startproject'}>Start a project</Link></button>
+       <button className={styles.Hamburgerbtn_navbar}><Link className={styles.btnlinktext}  to={'/startproject'}>Start Project</Link></button>
 
        
 
