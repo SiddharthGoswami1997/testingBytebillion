@@ -1,0 +1,25 @@
+.box_card{
+    width: 360px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+    border-radius: 6px;
+    padding: 30px;
+}
+.heading_card{
+    display: flex;
+    align-items: center;
+}
+.img_card{
+    width: 50px;
+    height: 50px;
+}
+.title_card{
+    font-size: 20px;
+    font-weight: 700;
+}
+.content_card{
+    font-size: 14px;
+}

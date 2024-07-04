@@ -1,22 +1,39 @@
 .container_navbar{
-    width: 97vw;
+    width: 100%;
     height: 93px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-   margin: auto;
+   /* margin: auto; */
+   padding-right: 20px;
+ 
+  position: fixed;
+  z-index: 11;
+  background-color: white;
     /*  padding: auto; */
     /* border-bottom: 1px solid black;
     box-shadow:0 1px rgba(56, 52, 52, 0.131) */
 }
+/* .forhamburger_navbar{
+    display: flex;
+    flex-direction: column;
+} */
+
+.Hamburgerbtn_navbar{
+    display: none;
+}
 .container_navbar:hover{
   /* border-bottom: 2px solid black; */
+ 
     box-shadow:0 2px rgba(56, 52, 52, 0.231)
 }
 .logo_navbar{
     width: 157px;
     height: 41px;
-    object-fit:scale-down;
+    margin-left: 20px;
+    object-fit:contain;
+  
+
 }
 .menu_navbar{
     display: flex;
@@ -26,17 +43,167 @@
 
 }
 .btn_navbar{
-  background-color: #FF7D29;
+
+  /* background-color: #FF7D29;
    border-radius: 16px;
    font-weight: bold;
    color: white;
   border:  #FF7D29;
   width: 150px;
   height: 40px;
-  box-shadow:0 4px rgba(56, 52, 52, 0.331) inset ;
+  box-shadow:0 4px rgba(56, 52, 52, 0.331) inset ; */
+
+/* padding-right: 20px; */
+  background-color: #FF7D29;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+ border:  #1F3255;
+ width: 150px;
+ height: 40px;
+ box-shadow:0 4px 4px 0 #0000003d ;
+ /* font-size: 10px;
+  font-weight: 700; */
+  
 
 }
 .menu_navbar li{
     font-size: 20px;
     font-weight:500;
 }
+.linktext{
+    text-decoration: none;
+   color:  #000000;
+}
+.linktext:active{
+    color: #FF7D29;
+}
+.btnlinktext{
+    text-decoration: none;
+    color:  white;
+}
+.hamburger_navbar{
+    display: none;
+}
+
+.hamburgermenu_navbar{
+    display: none;
+}
+.mobilemenu{
+    display: none;
+}
+.hamburgermenumobile_navbar{
+    text-decoration: none;
+   
+
+}
+
+@media screen and (max-width:980px ) {
+    .menu_navbar{
+        display: none;
+    }
+    .menudiv_navbar{
+        display: none;
+    }
+    .hamburger_navbar{
+        display: flex;
+        padding-left: 20px;
+        flex-direction: column;
+        /* border: 1px solid red; */
+        
+    }
+    .container_navbar{
+        position: fixed;
+        display: flex;
+        /* justify-content: space-between;*/
+        align-items: center; 
+        width: 100vw;
+    }
+    .hamburgermenu_navbar{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        position: fixed;
+        top: 93px;
+        z-index: 31;
+        width: 100%;
+        height: 100%;
+        border-right: 1px solid gray;
+        /* align-items: center; */
+        padding-left: 25px;
+       
+        animation: scale .1s linear 1;
+        transform-origin: left;
+    
+    }
+
+    @keyframes scale {
+        0% {
+          transform: scaleX(0%);
+        }
+       
+        100% {
+          transform: scaleX(100%);
+        }
+    }
+
+    .hamburgermenumobile_navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 80%;
+        gap: 20px;
+       list-style: none;
+       font-size: 20px;
+       font-weight: 700;
+
+    }
+    .container_navbar:hover{
+        /* border-bottom: 2px solid black; */
+          box-shadow:none
+      }
+      
+      .container_navbar{
+        width: 98vw;
+      }
+      .logo_navbar {
+        width: 130px;
+        height: 41px;
+        margin-left: 20px;
+        object-fit: contain;
+    }
+      .Hamburgerbtn_navbar{
+        display: block;
+
+        background-color: #1F3255;
+        border-radius: 10px;
+        font-weight: bold;
+        color: white;
+       border:  #1F3255;
+       width: 90px;
+       height: 40px;
+       box-shadow:0 4px 4px 0 #0000003d ;
+       font-size: 10px;
+        font-weight: 700;
+     
+
+
+
+
+        /* background-color: #FF7D29;
+        border-radius: 16px;
+        font-weight: bold;
+        color: white;
+       border:  #FF7D29;
+       width: 90px;
+       height: 25px;
+       box-shadow:0 4px rgba(56, 52, 52, 0.331) inset ;
+       font-size: 10px;
+        font-weight: 400; */
+       
+      }
+}
+
+
+

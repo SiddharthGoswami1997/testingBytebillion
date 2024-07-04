@@ -1,0 +1,8 @@
+.component_service{
+    display: flex;
+    flex-direction: column;
+   height: 3500px;
+   /* border: 1px solid red; */
+   justify-content: space-evenly;
+margin-top: 100px;
+}

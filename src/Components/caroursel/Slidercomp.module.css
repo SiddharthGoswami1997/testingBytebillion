@@ -1,0 +1,23 @@
+.slider_container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .slide_slide {
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #eee;
+    /* transition: transform 0.3s, background-color 0.3s; */
+  }
+  
+  .slick-center .slide_slide {
+    transform: scale(2);
+    background-color: #ffeb3b;
+  }
+  
+  /* Optional: Style for dots */
+  .slick-dots li button:before {
+    color: black;
+  }
+  

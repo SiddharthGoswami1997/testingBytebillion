@@ -1,89 +1,188 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
-.container_home{
-    width: 95vw;
-    height: 600px;
+.container_home {
+    width: 97vw;
+    height: 750px;
     display: flex;
     align-items: center;
+    justify-content: center; /* Added to center the content horizontally */
     margin: auto;
+    margin-top: 60px;
+    /* border: 1px dashed black; */
+    /* background-color: red; */
 }
-.content1_home{
+
+.content1_home {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 550px;
+    /* align-items: center; */
+    width: 590px;
     height: 400px;
     margin: auto;
+    padding-left: 20px;
 }
-.h1_home{
-    font-size: 50px;
+
+.h1_home {
+    font-size: 3rem;
     font-family: "Noto Serif", serif;
 }
 
-.btn_home{
+.btn_home {
     background-color: #FF7D29;
-   border-radius: 5px;
-   font-weight: bold;
-   color: white;
-  border:  #FF7D29;
-  width: 150px;
-  height: 40px;
-  box-shadow:0 4px rgba(56, 52, 52, 0.391) inset ;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    border: #FF7D29;
+    width: 150px;
+    height: 40px;
+    box-shadow: 0 4px rgba(56, 52, 52, 0.391) inset;
 }
-.content2_home{
+
+.content2_home {
     width: 790px;
     height: 500px;
+    padding-right: 0;
+    margin-right: 0 ;
     /* background-color: aquamarine; */
 }
-.content2box_home{
+
+.reponsivehome_image {
+    display: none;
+}
+
+.content2box_home {
     position: relative;
     width: 770px;
     height: 500px;
-
 }
-.women_home{
+
+.women_home {
     position: absolute;
     top: 65px;
     right: 265px;
-   
-   
 }
 
-.circle_home{
+.circle_home {
     position: absolute;
     top: 100px;
     right: 230px;
-     z-index: -1;
-    
+    z-index: -1;
 }
-.gearb_home{
+
+.gearb_home {
     position: absolute;
-    right: 0;
-    bottom: 70px;
-    
-    }
-.gears_home{
+    right: 130px;
+    bottom: 25px;
+}
+
+.gears_home {
     position: absolute;
     bottom: 100px;
     left: 100px;
-    
-    }
-.line_home{
+}
+
+.line_home {
     position: absolute;
-    bottom: 10px;
-    left: 325px;
-    /* color: green; */
-    /* background-color: black; */
-    /* width: 40%;
-    height: 20%; */
-    }
-.bar_home{
+    bottom: -50px;
+    left: 250px;
+}
+
+.bar_home {
     position: absolute;
-    
-    }
-.curve_home{
+    top: 0px;
+    left: 0;
+    bottom: 30px;
+}
+
+.curve_home {
     position: absolute;
     top: 50px;
     right: 150px;
+}
+
+@media screen and (max-width: 1080px) {
+    .container_home {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center; /* Ensure centering in smaller screens */
+        height: 620px;
+    }
+
+    .content1_home {
+        width: 540px;
+        height: 350px;
+    }
+
+    .h1_home {
+        font-size: 2.5rem;
+    }
+
+    .btn_home {
+        width: 125px;
+        height: 45px;
+    }
+
+    .content2_home {
+        width: 540px;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Ensure centering in smaller screens */
+    }
+
+    .content2box_home {
+        display: none;
+    }
+
+    .reponsivehome_image {
+        height: 100%;
+        display: block;
+        width: 90%;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container_home {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center; /* Ensure centering in smaller screens */
+        height: 620px;
+    }
+
+    .content1_home {
+        width: 350px;
+        height: 300px;
+    }
+
+    .h1_home {
+        font-size: 2rem;
+    }
+
+    .btn_home {
+        width: 100px;
+        height: 30px;
+    }
+
+    .content2_home {
+        width: 350px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Ensure centering in smaller screens */
+    }
+
+    .content2box_home {
+        display: none;
+    }
+
+    .reponsivehome_image {
+        height: 100%;
+        display: block;
+        width: 90%;
+        object-fit: contain;
+    }
 }

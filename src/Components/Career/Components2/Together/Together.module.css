@@ -1,0 +1,347 @@
+.container_together{
+    width: 95vw;
+    height: 90vh;
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    box-sizing: border-box;
+}
+.content1_together{
+    display: flex;
+    height: 50%;
+    width: 65%;
+    flex-direction: column;
+    align-items: center;
+}
+.h1_together{
+    font-size: 3rem;
+    font-weight: 700;
+    color:#1F3255;
+    
+
+}
+.handshakeh1_together{
+    font-size: 5rem;
+    font-weight: 700;
+    color:#1F3255;
+    display: flex;  
+    align-items: center; 
+
+}
+
+
+
+.handshakeimg_together{
+    height: 50px;
+    /* width: 110px; */
+    /* border-radius: 1000px; */
+    margin-top: 13px;
+    object-fit: cover;
+    /* box-shadow: 1px 1px 15px #888888; */
+}
+
+.content2_together{
+    display: flex;
+    height: 70%;
+    width: 30%;
+    flex-direction: column;
+   /* background-color: red; */
+}
+
+.content2box_together{
+    position: relative;
+    /* background-color: black; */
+    height: 378px;
+    width: 440px;
+  /* top: 20px; */
+   left: -50px;
+}
+.womenwithlaptop_together{
+position: absolute;
+bottom: 5px;
+left: -40px;
+}
+.larrow_together{
+    position: absolute;
+   z-index: -1;
+  
+   left: 90px;
+   top: 46px;
+
+   /* right: -10px; */
+
+    }
+    .marrow_together{
+    position: absolute;
+    bottom: -79px;
+    right: 37px;
+
+    
+    }
+    .sarrow_together{
+        bottom: -30px;
+        left: 18px;
+        position: absolute;
+}
+
+.tab_together{
+position:absolute;
+    z-index: 10;
+    bottom: -50px;
+    left: 84px;
+}
+@media screen and (max-width:990px) {
+ 
+    .container_together{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        /* gap:80px; */
+        /* margin-top: 140px; */
+        width: 100%;
+        /* height: 400px; */
+        /* background-color: aqua; */
+    }
+    .h1_together{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+   
+    .handshakeh1_together{
+        font-size: 3.5rem;
+           
+    }
+     
+    
+    .handshakeimg_together{
+        height: 50px;
+       
+        margin-top: 13px;
+        object-fit: cover;
+        
+    }
+
+    .content2_together{
+        display: flex;
+        height: 70%;
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+       /* background-color: red; */
+    }
+    
+    .content2box_together{
+        position: relative;
+        /* background-color: black; */
+        height: 378px;
+        width: 440px;
+      /* top: 20px; */
+       /* left: -50px; */
+    }
+    .womenwithlaptop_together{
+    position: absolute;
+    bottom: 5px;
+    left: -40px;
+    /* width: 50px; */
+    }
+    .larrow_together{
+        position: absolute;
+       z-index: -1;
+      
+       left: 90px;
+       top: 46px;
+    
+       /* right: -10px; */
+    
+        }
+        .marrow_together{
+        position: absolute;
+        bottom: -50px;
+        right: 0;
+    
+        
+        }
+        .sarrow_together{
+            bottom: -10px;
+            left: 30px;
+            position: absolute;
+    }
+    
+    .tab_together{
+    position:absolute;
+        z-index: 10;
+        bottom: -50px;
+        
+        left: 66px;
+    }
+    
+
+
+}
+@media screen and (max-width:590px) {
+    /* .content2_together {
+        display: flex;
+        height: 70%;
+        width: 99%;} */
+    .content2box_together{
+        position: relative;
+        /* background-color: black; */
+        height: 323px;
+        width: 412px;
+      /* top: 20px; */
+      left: 50px;
+    }
+    .larrowimg_together{
+        width: 300px;
+        height: 409px;
+object-fit: contain;
+    }
+
+    .womenwithlaptopimg_together{
+        width: 310px;
+        height: 310px;
+        object-fit: contain;
+            }
+        
+            .larrowimg_together{
+                width: 355px;
+                height: 280px;
+        object-fit: contain;
+            }
+        
+            .marrowimg_together{
+                width: 75px;
+        height:     75px;
+        object-fit: contain;    
+            }
+        
+            .sarrowimg_together{}
+        
+            .tabimg_together{
+                width: 205px;
+                height: 100px;
+        object-fit: contain;
+            }
+        
+
+
+
+
+    .womenwithlaptop_together{
+    position: absolute;
+    bottom: 5px;
+    /* left: -40px; */
+    /* width: 50px; */
+    }
+    .larrow_together{
+        position: absolute;
+       z-index: -1;
+      
+       left: 30px;
+       top: 86px;
+    
+       /* right: -10px; */
+    
+        }
+        .marrow_together{
+        position: absolute;
+        bottom: -37px;
+        right: 121px;
+    
+        
+        }
+        .sarrow_together{
+            bottom: -10px;
+            left: 30px;
+            position: absolute;
+    }
+    
+    .tab_together{
+    position:absolute;
+        z-index: 10;
+        bottom: -50px;
+        left: 67px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    /* .content2_together {
+        display: flex;
+        height: 70%;
+        width: 99%;} */
+    .content2box_together{
+        position: relative;
+        /* background-color: black; */
+        height: 260px;
+        width: 272px;
+      /* top: 20px; */
+      left: 15px;
+    }
+    .womenwithlaptop_together{
+    position: absolute;
+    bottom: 5px;
+    left: -40px;
+    /* width: 50px; */
+    }
+    .larrow_together{
+        position: absolute;
+       z-index: -1;
+      
+       left: 37px;
+       top: 64px;
+    
+       /* right: -10px; */
+    
+        }
+        .marrow_together{
+        position: absolute;
+        bottom: -38px;
+        right: 36px;
+    
+        
+        }
+        .sarrow_together{
+            bottom: -10px;
+            left: 30px;
+            position: absolute;
+    }
+    
+    .tab_together{
+    position:absolute;
+        z-index: 10;
+        bottom: -50px;
+        
+        left: 38px
+    }
+    
+
+
+
+
+    .womenwithlaptopimg_together{
+width: 250px;
+height: 250px;
+object-fit: contain;
+    }
+
+    .larrowimg_together{
+        width: 254px;
+        height: 221px;
+object-fit: contain;
+    }
+
+    .marrowimg_together{
+        width: 75px;
+height:     75px;
+object-fit: contain;    
+    }
+
+    .sarrowimg_together{}
+
+    .tabimg_together{
+        width: 170px;
+        height: 122px;
+object-fit: contain;
+    }
+}

@@ -1,0 +1,16 @@
+.main_container {
+    /* border: 2px dashed red; */
+    height: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading {
+    margin-top: 30px;
+}
+.review {
+    display: flex;
+    justify-content: space-around;
+    width: 98vw;
+}

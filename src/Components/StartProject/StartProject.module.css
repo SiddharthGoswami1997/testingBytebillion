@@ -1,0 +1,10 @@
+.container_start{
+    display: flex;
+    flex-direction: column;
+   /* gap: 10px; */
+    width: 97vw;
+    height: 150%;
+    align-items: center;
+    margin: 130px auto;
+    /* position: relative; */
+}

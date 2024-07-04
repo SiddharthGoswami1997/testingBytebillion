@@ -1,0 +1,20 @@
+.container_project{
+    width: 95vw;
+    height: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 50px;
+    margin-top: 150px;
+}
+.h1_project{
+    font-size: 32px;
+    text-align: center;
+}
+.p_project{
+    font-size: 16;
+    width: 70%;
+    margin: 0 auto;
+    /* padding-left: 25%; */
+}

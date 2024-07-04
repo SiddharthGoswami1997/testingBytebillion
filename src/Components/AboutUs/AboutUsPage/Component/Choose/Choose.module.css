@@ -1,0 +1,372 @@
+.choose__container {
+    text-align: center;
+    padding: 20px;
+    height: 600px;
+  }
+  
+  .choose__heading {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .choose__mainBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .choose__box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 25px;
+    padding: 15px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+
+  }
+  
+  .choose__icon {
+    width: 60px;
+    height: 45px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    z-index: 2; 
+  }
+
+  .choose__icon  {
+    width: 80px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    z-index: 2; 
+  }
+  .choose_iconimg{
+    width: 80px;
+    height: 40px;
+    object-fit: scale-down;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    z-index: 2; 
+  }
+  .choose__content {
+    flex-grow: 1;
+    z-index: 2;
+  }
+  
+  .choose__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .choose__description {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 0 0;
+  }
+
+ 
+  .choose__box.borderAnimation1::before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160%;
+    height: 130%;
+    background-image: conic-gradient(#F4C0C0 0deg, #FA4E54 90deg, transparent 130deg, transparent 180deg, #FA4E54 180deg, #F4C0C0 270deg, transparent 310deg, transparent 360deg);
+    animation: borderAnimation1 8s linear infinite;
+    z-index: 0;
+  }
+  .choose__box.borderAnimation2::before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160%;
+    height: 130%;
+    background-image: conic-gradient(#7D4FCE 0deg, #E3C1FF 90deg, transparent 130deg, transparent 180deg, #DCB1FF 180deg, #E3C1FF 270deg, transparent 310deg, transparent 360deg);
+    animation: borderAnimation1 8s linear infinite;
+    z-index: 0;
+  }
+  .choose__box.borderAnimation3::before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160%;
+    height: 130%;
+    background-image: conic-gradient(#42D4FF 0deg, #97E7FF 90deg, transparent 130deg, transparent 180deg, #14CAFF 180deg, #00C5FF 270deg, transparent 310deg, transparent 360deg);
+    animation: borderAnimation1 8s linear infinite;
+    z-index: 0;
+  }
+    .choose__box.borderAnimation4::before {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 160%;
+        height: 130%;
+        background-image: conic-gradient(#84FF97 0deg, #A8FFB6 90deg, transparent 130deg, transparent 180deg, #58FF72 180deg, #A8FFB6 270deg, transparent 310deg, transparent 360deg);
+        animation: borderAnimation1 8s linear infinite;
+        z-index: 0;
+      }
+      .choose__box.borderAnimation5::before {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 160%;
+        height: 130%;
+        background-image: conic-gradient(#F7A161 0deg, #F68C3E 90deg, transparent 130deg, transparent 180deg, #F58634 180deg, #F68C3E 270deg, transparent 310deg, transparent 360deg);
+        animation: borderAnimation1 8s linear infinite;
+        z-index: 0;
+    
+      }
+      .choose__box.borderAnimation6::before {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 160%;
+        height: 130%;
+        background-image: conic-gradient(#5199C5 0deg, #6FAACF 90deg, transparent 130deg, transparent 180deg, #1978B2 180deg, #6FAACF 270deg, transparent 310deg, transparent 360deg);
+        animation: borderAnimation1 8s linear infinite;
+        z-index: 0;
+      }
+    
+    
+    
+    
+      .choose__box.borderAnimation1::after {
+        content: " ";
+        border-radius: 5px;
+        position: absolute;
+        background-color: #fff;
+        height: 95%;
+        width: 99%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+      .choose__box.borderAnimation2::after {
+        content: " ";
+        border-radius: 5px;
+        position: absolute;
+        background-color: #fff;
+        height: 95%;
+        width: 99%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+      .choose__box.borderAnimation3::after {
+        content: " ";
+        border-radius: 5px;
+        position: absolute;
+        background-color: #fff;
+        height: 95%;
+        width: 99%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+      .choose__box.borderAnimation4::after {
+        content: " ";
+        border-radius: 5px;
+        position: absolute;
+        background-color: #fff;
+        height: 95%;
+        width: 99%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+      .choose__box.borderAnimation5::after {
+        content: " ";
+        border-radius: 5px;
+        position: absolute;
+        background-color: #fff;
+        height: 95%;
+        width: 99%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+      .choose__box.borderAnimation6::after {
+        content: " ";
+        border-radius: 5px;
+        position: absolute;
+        background-color: #fff;
+        height: 95%;
+        width: 99%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+    
+    
+      @keyframes borderAnimation1 {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+        25% {
+            transform: translate(-50%, -50%) rotate(-90deg);
+        }
+        75% {
+            transform: translate(-50%, -50%) rotate(-180deg);
+        }
+        100% {
+            transform: translate(-50%, -50%) rotate(30deg);
+        }
+    } 
+    
+    
+    
+    
+    
+    @media screen and (max-width: 700px) {
+        .choose__heading {
+            font-size: 35px;
+        }
+    
+        .choose__icon {
+            width: 120px;
+            height: 100px;
+            margin-right: 10px;
+            z-index: 2; 
+          }
+    
+          .choose__box.borderAnimation1::after, .choose__box.borderAnimation2::after, .choose__box.borderAnimation3::after, .choose__box.borderAnimation4::after, .choose__box.borderAnimation5::after, .choose__box.borderAnimation6::after {
+            content: " ";
+            border-radius: 5px;
+            position: absolute;
+            background-color: #fff;
+            height: 95%;
+            width: 97%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+          }
+    }
+    
+    @media screen and (max-width: 566px) {
+        .choose__heading {
+            font-size: 35px;
+        }
+    
+        .choose__icon {
+            width: 120px;
+            height: 100px;
+            margin-right: 10px;
+            z-index: 2; 
+          }
+    
+        .choose__box {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 25px;
+            padding: 15px;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            position: relative;
+            overflow: hidden;  
+          }
+    
+          .choose__box.borderAnimation1::after {
+            content: " ";
+            border-radius: 5px;
+            position: absolute;
+            background-color: #fff;
+            height: 95%;
+            width: 98%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+          }
+    
+          .choose__box.borderAnimation2::after {
+            content: " ";
+            border-radius: 5px;
+            position: absolute;
+            background-color: #fff;
+            height: 95%;
+            width: 98%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+          }
+    
+          .choose__box.borderAnimation3::after {
+            content: " ";
+            border-radius: 5px;
+            position: absolute;
+            background-color: #fff;
+            height: 95%;
+            width: 98%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+          }
+          .choose__box.borderAnimation4::after {
+            content: " ";
+            border-radius: 5px;
+            position: absolute;
+            background-color: #fff;
+            height: 95%;
+            width: 98%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+          }
+          .choose__box.borderAnimation5::after {
+            content: " ";
+            border-radius: 5px;
+            position: absolute;
+            background-color: #fff;
+            height: 95%;
+            width: 98%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+          }
+          .choose__box.borderAnimation6::after {
+            content: " ";
+            border-radius: 5px;
+            position: absolute;
+            background-color: #fff;
+            height: 95%;
+            width: 98%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+          }
+    }

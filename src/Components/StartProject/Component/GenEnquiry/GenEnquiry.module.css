@@ -1,0 +1,202 @@
+.container_general{
+    width: 97vw;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    /* position: absolute;
+    top: 100px; */
+}
+.headingdiv_general{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading_general{
+    color: #1F3255;
+    font-size:35px;
+    font-weight: 700;
+}
+.headingP_general{
+    font-size:18px;
+    font-weight: 500;
+}
+.form_general{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+.formbox1_general{
+    display: flex;
+    gap: 40px;
+}
+.formelem_general{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.formcol1_general{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.formlabel_general{
+font-size: 16px;
+
+}
+::placeholder{
+    color: #A2A2A2;
+    padding: 0;;
+}
+.forminput_general{
+border-radius: 4px;
+color: #A2A2A2;
+outline: none;
+border: 1px solid #F6F6F6;
+background-color: #F6F6F6;
+width: 300px;
+height: 50px;
+padding: 30px;
+}
+
+.textelem_general{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ 
+
+}
+.textinput_general{
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #F6F6F6;
+    background-color: #F6F6F6;
+    width: 640px;
+    height: 100px;
+    padding: 30px;   
+
+}
+.enquiryoption{
+    width:640px; 
+    height:60px;
+    background-color:#F6F6F6; 
+     outline:none;
+     padding:20px;
+    border-radius:5px;
+    border:1px solid #F6F6F6;
+    color:#A2A2A2
+}
+
+
+.btn_general{
+    background-color: #FF7D29;
+   border-radius: 16px;
+   font-weight: bold;
+   color: white;
+  border:  #FF7D29;
+  width: 150px;
+  height: 40px;
+  box-shadow:0 4px rgba(56, 52, 52, 0.331) inset ;
+  
+}
+
+@media screen and (max-width:664px) {
+    .container_general{
+        height: 1100px;
+    }
+    
+    .form_general{
+        align-items: center;
+        width: 80%;
+        /* background-color: aqua; */
+    }
+    .formbox1_general{
+        flex-direction: column;
+       /* background-color: #FF7D29; */
+       width: 80%;
+       align-items: center;
+    }
+    /* .formelem_general{
+        width: 100%;
+        background-color: blueviolet;
+    } */
+    .forminput_general{
+       /* background-color: black; */
+       width: 400px;
+       padding: 15px;
+    }
+    
+    .enquiryoption{
+        width:400px;
+        padding: 15px; 
+    }
+    /* .textelem_general{
+        align-items: center;
+    } */
+    .textinput_general{
+        width: 400px;
+        padding: 15px;
+    }
+    /* .formlabel_general{
+       
+    } */
+}
+
+@media screen and (max-width:440px) {
+    .container_general{
+        height: 1000px;
+    }
+    
+    .form_general{
+        align-items: center;
+        /* width: 80%; */
+        /* background-color: aqua; */
+    }
+    .formbox1_general{
+        flex-direction: column;
+       /* background-color: #FF7D29; */
+       /* width: 80%; */
+       align-items: center;
+    }
+    /* .formelem_general{
+        width: 100%;
+        background-color: blueviolet;
+    } */
+    .forminput_general{
+       /* background-color: black; */
+       width: 305px;
+       padding: 15px;
+    }
+    
+    .enquiryoption{
+        width:305px;
+        padding: 15px; 
+    }
+    /* .textelem_general{
+        align-items: center;
+    } */
+    .textinput_general{
+        width: 305px;
+        padding: 15px;
+    }
+  
+    /* .formlabel_general{
+       
+    } */
+    .heading_general{
+        color: #1F3255;
+        font-size:25px;
+        font-weight: 700;
+    }
+    .headingP_general{
+        font-size:16px;
+        font-weight: 500;
+    }
+
+    .formlabel_general{
+        font-size: 14px;
+        }
+}

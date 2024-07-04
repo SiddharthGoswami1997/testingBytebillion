@@ -1,0 +1,64 @@
+.mainbox_serial {
+    display: flex;
+    align-items: center;
+}
+
+.box1_serial {
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: #f584345b;
+    transform: rotate(45deg) scale(1);
+    animation: enlarge .5s linear;
+   
+}
+
+@keyframes enlarge {
+
+    0% {
+        transform: rotate(45deg) scale(0.2);
+    }
+    50% {
+        transform: rotate(45deg) scale(0.5);
+    }
+    100% {
+        transform: rotate(45deg) scale(1);
+    }
+}
+
+.text_serial {
+    text-align: center;
+    padding: 13px;
+    transform: rotate(-45deg);
+}
+
+.line_serial {
+    height: 1px;
+    width: 150px;
+    background-color: #f584345b;
+    margin-left: 6px;
+    
+    animation: scale 1s linear;
+    transform-origin: left;
+   
+}
+
+@keyframes scale {
+    0% {
+        transform: scaleX(30%);
+    }
+    50% {
+        transform: scaleX(70%);
+    }
+    100% {
+        transform: scaleX(100%);
+    }
+}
+
+.sbox {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border: 1px solid #f584345b;
+    transform: rotate(45deg);
+}

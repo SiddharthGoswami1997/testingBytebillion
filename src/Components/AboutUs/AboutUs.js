@@ -20,8 +20,8 @@ const AboutUs = () => {
             
         </div>
         <div className = {styles.content2_aboutus}>
-            <h2>Who we are</h2>
-            <h1>The Management Software</h1>
+            <h2 className={styles.content2h2_aboutus}>Who we are</h2>
+            <h1 className={styles.content2h1_aboutus}>The Management Software</h1>
             <p>At ByteBillion, we're dedicated to pushing the boundaries of technology to deliver innovative solutions for businesses worldwide. Located in the heart of Indore. Our team of experts specializes in a range of cutting-edge technologies, ensuring that we provide top-notch services tailored to meet your needs.</p>
             <button className={styles.btn_aboutus}>View more information</button>
         </div>

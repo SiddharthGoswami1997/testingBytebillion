@@ -1,0 +1,22 @@
+.main_div {
+    height: 115px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    margin: 100px auto;
+    flex-direction: column;
+    box-shadow: inset 3px 6px 5px 4px #ccc;
+    border-radius: 8px;
+    line-height: 0;
+    gap: 1px;
+  
+  }
+  .heading{
+      font-size: 12px;
+      font-weight: 300;
+      margin-top: 10px;
+  }
+  .number {
+     margin-top: -12px;
+     font-size: 12px;
+  }

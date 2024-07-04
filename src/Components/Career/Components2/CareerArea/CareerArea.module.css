@@ -1,0 +1,54 @@
+.container_career{
+    width: 97vw;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin:auto;
+    /* gap: 80px; */
+}
+.heading_career{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.h1_career{
+    font-size: 2.1rem;
+}
+.h1underline_career{
+    margin: auto;
+    width: 60%;
+    height: 3px;
+    background-color:#F58634;
+    border-radius: 90px;
+}
+.content_career{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+   width: 85%;
+   
+   
+    
+}
+.team_career{
+height: 166px;
+}
+.laptop_career{
+width: 550px;
+}
+.screen_career{
+height: 355px;
+width: 260px;
+margin: 0;
+box-shadow: none;
+}
+.container1_career{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}

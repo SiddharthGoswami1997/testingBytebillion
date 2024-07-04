@@ -5,14 +5,15 @@ const FAQchild = ({ question, answer, id, show, toggle }) => {
   return (
     <div className={show ? styles.faqchild2_faq : styles.faqchild1_faq}>
       <div className={styles.ques_faq}>
-        <p>{question}</p>
+      
+        <p className={styles.p_faqchild}>{question}</p>
         <span onClick={() => toggle(id)}>
-          {show ? <span>&#9899;</span> : <span>&#9898;</span>}
+          {show ? <span style={{color:"#575757" , fontSize:"16px"}}><i class="fa-solid fa-angle-up"></i></span> : <span style={{color:"#575757",fontSize:"16px"}}><i class="fa-solid fa-angle-down"></i></span>}
         </span>
       </div>
-      <div className={show ? styles.border1_faq : styles.border2_faq}>
+      <div className={show || id===3 ? styles.border1_faq : styles.border2_faq}>
         {show && <p className={styles.ans_faq}>{answer}</p>}
-      </div>
+               </div>
     </div>
   );
 };
