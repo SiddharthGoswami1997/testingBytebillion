@@ -4,6 +4,9 @@ import styles from "./ContactUs.module.css";
 import { useState, useEffect } from "react";
 
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
   const [details, setDetails] = useState({
     name: "",
     email: "",

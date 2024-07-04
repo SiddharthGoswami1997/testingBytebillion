@@ -1,9 +1,10 @@
 .container_faq {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 70px;
     align-items: center;
-    height: 600px ;
+    height: 400px ;
     width: 97vw;
     margin: 100px auto;
     padding: 20px;

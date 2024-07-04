@@ -2,6 +2,9 @@ import React from 'react'
 import styles from './AboutUs.module.css'
 
 const AboutUs = () => {
+
+
+  
   return (
     <div className={styles.container_aboutus}>
         <div className = {styles.content1_aboutus} >

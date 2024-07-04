@@ -54,12 +54,12 @@ const GenEnquiry = () => {
               When Can We help you with
             </label>
             <select id="cars" name="cars" className={styles.enquiryoption}>
-              <option value="volvo" style={{ padding: "20px" }}>
+              <option value="Select type of enquiry" style={{ padding: "20px" }}>
                 Select type of enquiry
               </option>
-              <option value="saab"></option>
-              <option value="fiat"></option>
-              <option value="audi"></option>
+              <option value="Business Enquiry">Business Enquiry</option>
+              <option value="Other">Other</option>
+              
             </select>
           </div>
         </div>
