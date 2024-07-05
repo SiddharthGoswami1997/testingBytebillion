@@ -1,0 +1,21 @@
+.box_card{
+    width: 260px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   border: 2px solid black;
+    border-radius: 6px;
+    padding: 30px;
+}
+.img_card{
+    width: 50px;
+    height: 50px;
+}
+.title_card{
+    font-size: 20px;
+    font-weight: 700;
+}
+.content_card{
+    font-size: 14px;
+}

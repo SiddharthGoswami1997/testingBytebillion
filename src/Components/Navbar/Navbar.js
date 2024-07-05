@@ -1,10 +1,16 @@
 import React, { useState } from 'react'
 import styles from './Navbar.module.css'
 import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom';
+
 
 const Navbar = () => {
+    let location = useLocation();
+    console.log("location",location.pathname,location);
+    let path = location.pathname;
+    const data = ['/','/aboutus','/services','/career','/contactus']
 
-const [showIcon, setShowIcon ] = useState(false)
+    const [showIcon, setShowIcon ] = useState(false)
 
   return (
     <div className={styles.forhamburger_navbar}>
@@ -17,24 +23,24 @@ const [showIcon, setShowIcon ] = useState(false)
         </div>
         <div className={styles.menudiv_navbar}>
             <ul className={styles.menu_navbar} >
-                <li>
-                <Link className={styles.linktext}  to={'/'}>Home</Link>
+                <li >
+                <Link style={{backgroundColor:`${data[0] === path ? '#FF7D29': 'white'}`}} className={styles.linktext}  to={'/'}>Home</Link>
                     </li>
-                <li>
-                <Link className={styles.linktext}  to={'/aboutus'}>About Us</Link>
+                <li >
+                <Link style={{backgroundColor:`${data[1] === path ? '#FF7D29': 'white'}`}} className={styles.linktext}  to={'/aboutus'}>About Us</Link>
 
                     
                     </li>
                 <li>
-                <Link className={styles.linktext}  to={'/services'}>Services</Link>
+                <Link  style={{backgroundColor:`${data[2] === path ? '#FF7D29': 'white'}`}} className={styles.linktext}  to={'/services'}>Services</Link>
                     
                     </li>
                 <li>
-                <Link className={styles.linktext}  to={'/career'}>Career</Link>
+                <Link style={{backgroundColor:`${data[3] === path ? '#FF7D29': 'white'}`}}  className={styles.linktext}  to={'/career'}>Career</Link>
                      
                     </li>
                 <li>
-                <Link className={styles.linktext}  to={'/contactus'}>Contact Us</Link>
+                <Link  style={{backgroundColor:`${data[4] === path ? '#FF7D29': 'white'}`}} className={styles.linktext}  to={'/contactus'}>Contact Us</Link>
                     
                     </li>
                 <li>
