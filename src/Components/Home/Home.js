@@ -7,7 +7,16 @@ import Projects from "../caroursel/Project";
 import Testimonial from "../Testimonial/Testimonial";
 import Bstracker from "./Graph/Bstracker/Bstracker";
 import Totalproject from "./Graph/Totalproject/Totalproject"
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
 const Home = () => {
+
+  useEffect(()=> {
+    AOS.init({duration: "1500"})
+  },[])
+
+
   useEffect(() => {
     window.scrollTo(0, 0);
 }, []);
@@ -15,25 +24,25 @@ const Home = () => {
   return (
     <>
       <section className={styles.container_home}>
-        <div className={styles.content1_home}>
-          <h1 className={styles.h1_home}>Enhance Your Business Efficiency </h1>
-          <p className={styles.p_home}>
+        <div className={styles.content1_home} data-aos="zoom-in" data-aos-delay="300"data-aos-duration="1500">
+          <h1 data-aos="zoom-in" data-aos-delay="300"data-aos-duration="1500" className={styles.h1_home}>Enhance Your Business Efficiency </h1>
+          <p data-aos="zoom-in" data-aos-delay="300"data-aos-duration="1500" className={styles.p_home}>
             Let us tackle your complex projects with our skilled development
             teams, or seamlessly integrate our vetted developers into your
             existing workforce.
           </p>
-          <button className={styles.btn_home}>Contact Us</button>
+          <button className={styles.btn_home} data-aos="zoom-in" >Contact Us</button>
         </div>
-        <div className={styles.content2_home}>
+        <div className={styles.content2_home} >
         <img src="/Images/Homeresponsive_image.png" alt="home" className={styles.reponsivehome_image}/>
 
           <div className={styles.content2box_home}>
             <img src="/Images/Homeresponsive_image.png" alt="home" className={styles.reponsivehome_image}/>
-            <div className={styles.women_home}>
-              <img src="/Images/Home_women.png" alt="women" />
+            <div className={styles.women_home}  data-aos="fade-up" data-aos-delay="300"data-aos-duration="1500">
+              <img src="/Images/Home_women.png" alt="women"  data-aos="fade-up" data-aos-delay="300"data-aos-duration="1500"  data-aos-anchor-placement="top-center"/>
             </div>
-            <div className={styles.circle_home}>
-              <img src="/Images/Home_circle.png" alt="circle" />
+            <div className={styles.circle_home}   data-aos="zoom-in">
+            <img src="/Images/Home_circle.png" alt="circle" data-aos="zoom-in"  data-aos-delay="300"data-aos-duration="1500"  data-aos-anchor-placement="top-center"/>
             </div>
             <div className={styles.gearb_home}>
               <img src="/Images/Home_biggear.png" alt="gaer1" />

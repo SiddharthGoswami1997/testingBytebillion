@@ -10,7 +10,7 @@ function Slidercomp() {
     autoplay: true,
     centerMode: true,
     infinite: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     slidesToShow: 3,
     slidesToScroll: 1,
     // adaptiveHeight: true,

@@ -27,14 +27,16 @@
 }
 .menuoption_navigate{
    list-style: none;
-   font-size: 20px;
-   font-weight: 700;
-   padding: 15px;
-   border-radius: 6px;
+  
 }
-.menuoption_navigate:hover{
-    background-color:#f584342d;
-    
+
+.link_navigate{
+   text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 6px;
+     color:black;
 }
 @media screen and (max-width:675px) {
   
@@ -45,16 +47,13 @@
        padding: 10px;
     }
    
-    .menuoption_navigate{
+    .link_navigate{
        /* background-color: aqua; */
        font-size: 16px;
        padding: 1px;
     }
    
-    .menuoption_navigate:hover{
-        background-color:#f584342d;
-        
-    }
+   
 }
 @media screen and (max-width:396px) {
   
@@ -66,14 +65,12 @@
 
     }
    
-    .menuoption_navigate{
+    .link_navigate{
        
        font-size: 12px;
        padding: 6px;
     }
    
-    .menuoption_navigate:hover{
-        background-color:#f584342d;
-        
-    }
+  
+
 }

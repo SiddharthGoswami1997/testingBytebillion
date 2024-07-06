@@ -67,17 +67,29 @@
   
 
 }
+
+.bgcolor1_navbar{
+    background-color: #FF7D29;
+}
+.bgcolor2_navbar{
+    background-color: #FF7D29;
+}
+.nocolor_navbar{
+    background-color:white;
+}
 .menu_navbar li{
     font-size: 20px;
     font-weight:500;
 }
 .linktext{
+    padding: 6px;
+    border-radius: 6px; 
     text-decoration: none;
-   color:  #000000;
+   color:  #000000b3;
+   /* box-shadow:0 4px 4px 0 #0000003d ; */
+
 }
-.linktext:active{
-    color: #FF7D29;
-}
+
 .btnlinktext{
     text-decoration: none;
     color:  white;
@@ -98,7 +110,7 @@
 
 }
 
-@media screen and (max-width:980px ) {
+@media screen and (max-width:1048px ) {
     .menu_navbar{
         display: none;
     }

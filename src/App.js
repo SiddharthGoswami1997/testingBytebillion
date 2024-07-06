@@ -15,6 +15,7 @@ import StartProject from "./Components/StartProject/StartProject";
 import Project from "./Components/StartProject/Component/Project/Project";
 import GenEnquiry from "./Components/StartProject/Component/GenEnquiry/GenEnquiry";
 import JobEnquiry from "./Components/StartProject/Component/JobEnquiry/JobEnquiry";
+import Swipercarousel from "./Testing/Swipercarousel";
 
 // import Testnavbar from "./Testing/Testnavbar";
 function App() {
@@ -49,8 +50,8 @@ function App() {
 
       </Routes>
       <Footer />  
-
-      {/* {/* <Testnavbar/> */}
+{/* <Swipercarousel/> */}
+   {/* <Testnavbar/> */}
 
     </div>
   );
