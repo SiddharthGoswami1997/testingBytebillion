@@ -5,7 +5,7 @@
     height: 750px;
     display: flex;
     align-items: center;
-    justify-content: center; /* Added to center the content horizontally */
+   justify-content: center;      /*Added to center the content horizontally */
     margin: auto;
     margin-top: 60px;
     /* border: 1px dashed black; */

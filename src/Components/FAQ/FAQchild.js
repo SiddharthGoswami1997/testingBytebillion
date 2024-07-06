@@ -4,14 +4,14 @@ import styles from "./FAQchild.module.css";
 const FAQchild = ({ question, answer, id, show, toggle }) => {
   return (
     <div className={show ? styles.faqchild2_faq : styles.faqchild1_faq}>
-      <div className={styles.ques_faq}>
+      <div className={styles.ques_faq} >
       
-        <p className={styles.p_faqchild}>{question}</p>
+        <p className={styles.p_faqchild}  data-aos="flip-up">{question}</p>
         <span onClick={() => toggle(id)}>
-          {show ? <span style={{color:"#575757" , fontSize:"16px"}}><i class="fa-solid fa-angle-up"></i></span> : <span style={{color:"#575757",fontSize:"16px"}}><i class="fa-solid fa-angle-down"></i></span>}
+          {show ? <span style={{color:"#575757" , fontSize:"16px"}}><i class="fa-solid fa-angle-up" ></i></span> : <span style={{color:"#575757",fontSize:"16px"}}><i class="fa-solid fa-angle-down" data-aos="fade-up" data-aos-delay="300"data-aos-duration="1500"></i></span>}
         </span>
       </div>
-      <div className={show || id===3 ? styles.border1_faq : styles.border2_faq}>
+      <div className={show || id===3 ? styles.border1_faq : styles.border2_faq} data-aos="fade-up" data-aos-delay="300"data-aos-duration="1500">
         {show && <p className={styles.ans_faq}>{answer}</p>}
                </div>
     </div>
