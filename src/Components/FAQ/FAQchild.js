@@ -6,12 +6,12 @@ const FAQchild = ({ question, answer, id, show, toggle }) => {
     <div className={show ? styles.faqchild2_faq : styles.faqchild1_faq}>
       <div className={styles.ques_faq} >
       
-        <p className={styles.p_faqchild}  data-aos="flip-up">{question}</p>
+        <p className={styles.p_faqchild}  data-aos="flip-up" data-aos-delay="100" data-aos-duration="500">{question}</p>
         <span onClick={() => toggle(id)}>
-          {show ? <span style={{color:"#575757" , fontSize:"16px"}}><i class="fa-solid fa-angle-up" ></i></span> : <span style={{color:"#575757",fontSize:"16px"}}><i class="fa-solid fa-angle-down" data-aos="fade-up" data-aos-delay="300"data-aos-duration="1500"></i></span>}
+          {show ? <span style={{color:"#575757" , fontSize:"16px"}}><i class="fa-solid fa-angle-up" ></i></span> : <span style={{color:"#575757",fontSize:"16px"}}><i class="fa-solid fa-angle-down" data-aos="fade-up"  data-aos-delay="100" data-aos-duration="500"></i></span>}
         </span>
       </div>
-      <div className={show || id===3 ? styles.border1_faq : styles.border2_faq} data-aos="fade-up" data-aos-delay="300"data-aos-duration="1500">
+      <div className={show || id===3 ? styles.border1_faq : styles.border2_faq} data-aos="fade-up"  data-aos-delay="100" data-aos-duration="500">
         {show && <p className={styles.ans_faq}>{answer}</p>}
                </div>
     </div>

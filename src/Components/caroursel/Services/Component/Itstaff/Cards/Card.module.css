@@ -1,16 +1,18 @@
 .box_card{
     width: 360px;
-    height: 330px;
+    height: 334px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-   
+    /* justify-content: space-around; */
+   gap: 25px;
     border-radius: 6px;
-    padding: 30px;
+    padding: 40px 20px 90px 20px;
 }
 .heading_card{
     display: flex;
     align-items: center;
+    width: 95%;
+    gap: 20px;
 }
 .img_card{
     width: 50px;
@@ -19,7 +21,9 @@
 .title_card{
     font-size: 20px;
     font-weight: 700;
+    text-align: left;
 }
 .content_card{
     font-size: 14px;
+    text-align: left;
 }
