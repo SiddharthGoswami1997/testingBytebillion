@@ -50,7 +50,7 @@ function App() {
 
       </Routes>
       <Footer />  
-{/* <Swipercarousel/> */}
+<Swipercarousel/>
    {/* <Testnavbar/> */}
 
     </div>

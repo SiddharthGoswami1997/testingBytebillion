@@ -54,12 +54,12 @@ const Home = () => {
               <Line></Line>
             </div>
             <div className={styles.bar_home}>
-              {/* <Bstracker/> */}
-              <img src="/Images/Home_bar.png" alt="bar"/>
+              <Bstracker/>
+              {/* <img src="/Images/Home_bar.png" alt="bar"/> */}
             </div>
             <div className={styles.curve_home}>
-             {/* <Totalproject/> */}
-              <img src="/Images/Home_curve.png" alt="curve"/>
+             <Totalproject/>
+              {/* <img src="/Images/Home_curve.png" alt="curve"/> */}
               </div>
           </div>
         </div>

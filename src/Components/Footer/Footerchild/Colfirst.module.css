@@ -18,6 +18,11 @@
 /* .container_colthird{
     width:20%;
 } */
+.container_colsecond , .container_colfourth , .container_colthird{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 @media screen and (max-width:670px) {
     .container_colfirst{
         font-size: 12px;

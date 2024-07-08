@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .container_home {
-    width: 97vw;
+    box-sizing: border-box;
+    width: 98%;
+    
     height: 750px;
     display: flex;
     align-items: center;
-   justify-content: center;      /*Added to center the content horizontally */
+    gap: 30px;
+         /*Added to center the content horizontally */
     margin: auto;
-    margin-top: 60px;
+    /* margin-top: 60px; */
     /* border: 1px dashed black; */
     /* background-color: red; */
 }
@@ -17,14 +25,15 @@
     flex-direction: column;
     justify-content: space-evenly;
     /* align-items: center; */
-    width: 590px;
+    width: 500px;
     height: 400px;
     margin: auto;
     padding-left: 20px;
+    /* border: 1px solid green; */
 }
 
 .h1_home {
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-family: "Noto Serif", serif;
 }
 
@@ -41,10 +50,14 @@
 }
 
 .content2_home {
-    width: 790px;
+    width: 750px;
+    /* width: 60%; */
     height: 500px;
     padding-right: 0;
     margin-right: 0 ;
+    margin-top: 50px;
+    /* -left: 30px; */
+    /* border: 1px solid red; */
     /* background-color: aquamarine; */
 }
 
@@ -53,53 +66,57 @@
 }
 
 .content2box_home {
+    left:10px;
     position: relative;
-    width: 770px;
+    width: 750px;
+    /* width: 100%; */
     height: 500px;
+    margin-top: 50px;
+   /* padding-left: 30px; */
 }
 
 .women_home {
     position: absolute;
     top: 65px;
-    right: 265px;
+    right: 200px;
 }
 
 .circle_home {
     position: absolute;
     top: 100px;
-    right: 230px;
+    right: 170px;
     z-index: -1;
 }
 
 .gearb_home {
     position: absolute;
-    right: 130px;
-    bottom: 25px;
+    right: 80px;
+    bottom: 30px;
 }
 
 .gears_home {
     position: absolute;
     bottom: 100px;
-    left: 100px;
+    left: 130px;
 }
 
 .line_home {
     position: absolute;
     bottom: -50px;
-    left: 250px;
+    left: 305px;
 }
 
 .bar_home {
     position: absolute;
-    top: 0px;
-    left: 0;
+    top: -100px;
+    left: 63px;
     bottom: 30px;
 }
 
 .curve_home {
     position: absolute;
-    top: 50px;
-    right: 150px;
+    top: -10px;
+    right:35px;
 }
 
 @media screen and (max-width: 1080px) {

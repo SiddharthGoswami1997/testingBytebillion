@@ -1,12 +1,13 @@
 .container_career{
-    width: 98vw;
-    height: 1200px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     margin:auto;
-    /* gap: 80px; */
+    gap: 80px;
+    /* border: #F58634 1px solid; */
 }
 .heading_career{
     display: flex;
@@ -22,14 +23,17 @@
     height: 3px;
     background-color:#F58634;
     border-radius: 90px;
+
 }
 .content_career{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
-    margin-left: 30px;
-   width: 85%;
-   
-   
+    /* margin-left: 30px; */
+   width: 1100px;
+   /* border: black 1px solid; */
+   gap: 10px;
     
 }
 .team_career{
@@ -45,7 +49,7 @@ margin: 0;
 box-shadow: none;
 }
 .container1_career{
-    width: 50%;
+    width: 550px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;

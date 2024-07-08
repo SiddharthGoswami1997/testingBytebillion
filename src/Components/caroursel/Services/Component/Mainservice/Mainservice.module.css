@@ -4,15 +4,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 60vh;
+    height: 550px;
     width: 100%;
     position: relative;
+    /* border: 1px solid purple; */
 
 }
 
 .mainservice__img {
     width: 100%;
-    object-fit: scale-down;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
 }
 .mainservice__text {
@@ -35,6 +37,17 @@
         text-align: center;
     
     }
+    /* .mainservice__img {
+       
+        object-fit: contain;
+       
+    } */
+    .mainservice__box {
+      
+        height: 250px;
+       
+    
+    }
 }
 
 
@@ -45,15 +58,30 @@
         text-align: center;
     
     }
+
+    /* .mainservice__img {
+       
+        object-fit: contain;
+       
+    } */
     .mainservice__box {
+      
+        height: 180px;
+       
+    
+    }
+
+
+
+    /* .mainservice__box {
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         height: 42vh;
-        width: 100%;
+        width: 98%;
         position: relative;
     }
-   
+    */
 }

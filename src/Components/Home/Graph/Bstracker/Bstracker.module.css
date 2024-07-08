@@ -36,6 +36,11 @@
     margin-left: 28px;
     font-weight: 500;
 }
+.month{
+    color: black;
+    font-size: 10px;
+
+}
 .bar_box {
     display: flex;
     justify-content:end;
@@ -78,4 +83,3 @@
     border-radius: 2px;
     background-color:#F58634;
  }
-

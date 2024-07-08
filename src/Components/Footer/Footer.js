@@ -13,7 +13,7 @@ const Footer = () => {
     <Colthird/>
     <Colfourth/>  
       </div>
-      <div>
+      <div className={styles.copyright_footer}>
         <p>© 2022-2023 <a href='/'>Byte Billion™ </a>. All Rights Reserved.</p>
         </div>  
     </div>

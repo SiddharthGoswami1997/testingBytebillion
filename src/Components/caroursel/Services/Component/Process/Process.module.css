@@ -1,6 +1,7 @@
 .process__main_box {
     padding: 30px;
     width: auto;
+    /* border: 1px solid red; */
 }
 .process__top {
     display: flex;

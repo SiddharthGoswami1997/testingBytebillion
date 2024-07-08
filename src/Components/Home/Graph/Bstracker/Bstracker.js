@@ -17,18 +17,18 @@ const Bstracker = () => {
         <div className={styles.graph}>
 
         <div className={styles.values}>
-            <span>20k</span>
-            <span>15k</span>
-            <span>10k</span>
-            <span>5k</span>
+            <span  className={styles.month}>20k</span>
+            <span  className={styles.month}>15k</span>
+            <span  className={styles.month}>10k</span>
+            <span  className={styles.month}>5k</span>
         </div>
 
         <div className={styles.months}>
-            <span>Jan</span>
-            <span>Feb</span>
-            <span>Mar</span>
-            <span>Apr</span>
-            <span>May</span>
+            <span  className={styles.month}>Jan</span>
+            <span className={styles.month}>Feb</span>
+            <span className={styles.month}>Mar</span>
+            <span className={styles.month}>Apr</span>
+            <span className={styles.month}>May</span>
         </div>
 
         <div className={styles.bar_box}>
