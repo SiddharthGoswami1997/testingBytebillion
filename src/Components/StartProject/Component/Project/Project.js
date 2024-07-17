@@ -255,6 +255,13 @@ import React, { useState } from "react";
 import styles from "./Project.module.css";
 
 const Project = () => {
+
+  const [selectedDate, setSelectedDate] = useState(''); // State variable for selected date
+
+  const handleDateChange = (event) => {
+    setSelectedDate(event.target.value);
+  };
+
   const [fileNames, setFileNames] = useState([]);
 
   const handleFileChange = (e) => {
@@ -283,7 +290,7 @@ const Project = () => {
   return (
     <section className={styles.container_project}>
       <div className={styles.headingdiv_project}>
-        <p className={styles.heading_project}>let’s Work Together</p>
+        <p className={styles.heading_project}>Let’s Work Together</p>
         <p className={styles.headingP_project}>
           Start your project with bytebillion
         </p>
@@ -307,7 +314,23 @@ const Project = () => {
                 className={styles.forminput_project}
               />
             </div>
+
             <div className={styles.formelem_project}>
+  <label className={styles.formlabel_project}>
+    When Do You Want To Start
+  </label>
+  <input
+    type="date"
+    value={selectedDate || 'Select a Date'}
+    onChange={handleDateChange}
+    className={styles.forminput_project}
+  />
+   <label className= {selectedDate ? `${styles.placeholder_label} ${styles.selected_date}` : `${styles.placeholder_label} ${styles.unselected_date}`}>
+    {selectedDate ? selectedDate : 'Select a Date'}
+  </label>
+</div>
+
+            {/* <div className={styles.formelem_project}>
               <label className={styles.formlabel_project}>
                 When Do You Want To Start
               </label>{" "}
@@ -316,7 +339,7 @@ const Project = () => {
                 placeholder="Select a Date"
                 className={styles.forminput_project}
               />
-            </div>
+            </div> */}
 </div>
           <div className={styles.formcol1_project}>
             <div className={styles.formelem_project}>

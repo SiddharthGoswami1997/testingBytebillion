@@ -148,7 +148,7 @@ background-color: #fff;
         gap: 10px;
     } */
 }
-@media screen and (max-width:745px) {
+@media screen and (max-width:848px) {
     .box_card{
         width: 230px;
         height:270px;

@@ -1,3 +1,35 @@
+.filenames_project {
+    margin-top: 10px;
+  }
+  
+  .filename_project {
+    right: 140px;
+    font-size: 14px;
+    color: #100f0f;
+    /* margin-top: 5px; */
+    position: absolute;
+    bottom: 60px;
+  }
+  .fileupload_project {
+    background-color: #F6F6F6;
+    width: 640px;
+    height: 230px;
+    border: 1px dashed #000000;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: background-color 0.3s ease;
+  }
+  
+  .fileupload_project.dragging {
+    background-color: #e0e0e0;
+  }
+
+
+
+
 .container_job{
     width: 97vw;
     height: 1100px;
@@ -34,6 +66,7 @@
     gap: 40px;
 }
 .formelem_job{
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -127,7 +160,7 @@ visibility: hidden;
     }
 
 .btn_job{
-
+    cursor: pointer;
     background-color: #FF7D29;
     border-radius: 10px;
     font-weight: bold;

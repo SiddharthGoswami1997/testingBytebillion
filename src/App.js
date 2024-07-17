@@ -47,6 +47,7 @@ function App() {
 <Route path="/privacy" element={<Privacy/>}>
 </Route>
 <Route path="/terms" element={<Terms/>}></Route>
+
 {/* <Route exact path="/startproject/" element={<StartProject/>} >
        
         </Route> */}

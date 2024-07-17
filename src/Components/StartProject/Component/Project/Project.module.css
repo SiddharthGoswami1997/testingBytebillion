@@ -1,14 +1,42 @@
+.selected_date{
+    color: #000000;
+}
+.unselected_date{
+    color: #a99f9f;
+}
 
+.placeholder_label {
+    position: absolute;
+    bottom: 12px;
 
+    /* top: -15px; 
+    left: 5px;  */
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #F6F6F6;
+    background-color: #F6F6F6;
+    width: 125px;
+   text-align: center;
+   padding: 4px;
+    height: 27px;
+    font-size: 14px;
+   
+    /* pointer-events: none; */
+    /* background-color: #000000; */
+     /* Disable click interaction */
+  }
 
 .filenames_project {
     margin-top: 10px;
   }
   
   .filename_project {
+    right: 140px;
     font-size: 14px;
-    color: #db2323;
-    margin-top: 5px;
+    color: #100f0f;
+    /* margin-top: 5px; */
+    position: absolute;
+    bottom: 60px;
   }
   .fileupload_project {
     background-color: #F6F6F6;
@@ -65,6 +93,7 @@
     gap: 40px;
 }
 .formelem_project{
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -160,7 +189,7 @@ visibility: hidden;
 }
 
 .btn_project{
-
+cursor: pointer;
     background-color: #FF7D29;
     border-radius: 10px;
     font-weight: bold;

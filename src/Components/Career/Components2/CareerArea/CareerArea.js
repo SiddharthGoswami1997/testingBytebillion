@@ -102,7 +102,7 @@ const data = [
 <div className={styles.slidercontainer_career}>
 
 <Swiper style={{
-  "--swiper-pagination-color": "#db5d23",}}
+  "--swiper-pagination-color": "#FF7D29",}}
 
         loop={true}
         slidesPerView={2}
