@@ -101,7 +101,8 @@ const data = [
   </div>
 <div className={styles.slidercontainer_career}>
 
-<Swiper
+<Swiper style={{
+  "--swiper-pagination-color": "#db5d23",}}
 
         loop={true}
         slidesPerView={2}
@@ -133,10 +134,7 @@ const data = [
         }}
         pagination={{
           clickable: true,
-          style: {
-            
-            'swiper-pagination-bullet-active': 'orange' // Orange color for active bullet
-        }
+        
         }}
         modules={[Autoplay,Pagination]}
         className={styles.mySwiper}
