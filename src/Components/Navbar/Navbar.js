@@ -19,28 +19,29 @@ const Navbar = () => {
        
        </div>
         <div >
-            <img className={styles.logo_navbar}src='https://www.bytebillion.com/images/FullLogo.png' alt='Logo'/>
+        <Link   to={'/'}> <img className={styles.logo_navbar}src='https://www.bytebillion.com/images/FullLogo.png' alt='Logo'/>
+        </Link>
         </div>
         <div className={styles.menudiv_navbar}>
             <ul className={styles.menu_navbar} >
                 <li >
-                <Link style={{backgroundColor:`${data[0] === path ? '#FF7D29': 'white'}`}} className={styles.linktext}  to={'/'}>Home</Link>
+                <Link style={{color:`${data[0] === path ? '#FF7D29': 'black'}`}} className={styles.linktext}  to={'/'}>Home</Link>
                     </li>
                 <li >
-                <Link style={{backgroundColor:`${data[1] === path ? '#FF7D29': 'white'}`}} className={styles.linktext}  to={'/aboutus'}>About Us</Link>
+                <Link style={{color:`${data[1] === path ? '#FF7D29': 'black'}`}} className={styles.linktext}  to={'/aboutus'}>About Us</Link>
 
                     
                     </li>
                 <li>
-                <Link  style={{backgroundColor:`${data[2] === path ? '#FF7D29': 'white'}`}} className={styles.linktext}  to={'/services'}>Services</Link>
+                <Link  style={{color:`${data[2] === path ? '#FF7D29': 'black'}`}} className={styles.linktext}  to={'/services'}>Services</Link>
                     
                     </li>
                 <li>
-                <Link style={{backgroundColor:`${data[3] === path ? '#FF7D29': 'white'}`}}  className={styles.linktext}  to={'/career'}>Career</Link>
+                <Link style={{color:`${data[3] === path ? '#FF7D29': 'black'}`}}  className={styles.linktext}  to={'/career'}>Career</Link>
                      
                     </li>
                 <li>
-                <Link  style={{backgroundColor:`${data[4] === path ? '#FF7D29': 'white'}`}} className={styles.linktext}  to={'/contactus'}>Contact Us</Link>
+                <Link  style={{color:`${data[4] === path ? '#FF7D29': 'black'}`}} className={styles.linktext}  to={'/contactus'}>Contact Us</Link>
                     
                     </li>
                 <li>

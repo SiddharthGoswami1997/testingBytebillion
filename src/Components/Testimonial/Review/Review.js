@@ -4,7 +4,7 @@ const Review = () => {
   return (
 
 
-          <div className={styles.reviews_box} data-aos="zoom-out" >
+          // <div className={styles.reviews_box}>
 
 
             <div className={styles.review_single_box} >
@@ -25,7 +25,7 @@ const Review = () => {
       
 
 
-         </div>
+        //  </div>
 
   )
 }

@@ -16,6 +16,9 @@ import Project from "./Components/StartProject/Component/Project/Project";
 import GenEnquiry from "./Components/StartProject/Component/GenEnquiry/GenEnquiry";
 import JobEnquiry from "./Components/StartProject/Component/JobEnquiry/JobEnquiry";
 import Swipercarousel from "./Testing/Swipercarousel";
+import Centerslider from "./Testing/Centerslider";
+import Privacy from "./Components/Legal/PrivacyPolicy/Privacy";
+import Terms from "./Components/Legal/Termsandcondition/Terms";
 
 // import Testnavbar from "./Testing/Testnavbar";
 function App() {
@@ -41,18 +44,19 @@ function App() {
         <Route exact path="job" element={<JobEnquiry/>}/>
         </Route>
 
-
-
-<Route exact path="/startproject/" element={<StartProject/>} >
+<Route path="/privacy" element={<Privacy/>}>
+</Route>
+<Route path="/terms" element={<Terms/>}></Route>
+{/* <Route exact path="/startproject/" element={<StartProject/>} >
        
-        </Route>
+        </Route> */}
         
 
       </Routes>
-      <Footer />  
-<Swipercarousel/>
-   {/* <Testnavbar/> */}
-
+      <Footer />   
+{/* <Swipercarousel/> */}
+   {/* <Testnavbar/>
+{/* <Centerslider/> */}
     </div>
   );
 }

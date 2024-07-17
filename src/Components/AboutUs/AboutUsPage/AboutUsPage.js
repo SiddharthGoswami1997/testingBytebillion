@@ -12,7 +12,7 @@ const AboutUsPage = () => {
     <div className={styles.container_aboutuspage}>
       <Driving/>
       <Overview/>
-      {/* <Team/> */}
+      <Team/>
       <Choose/>
     </div>
   )

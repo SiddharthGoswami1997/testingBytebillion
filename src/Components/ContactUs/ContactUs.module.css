@@ -1,6 +1,6 @@
 
 .container_contact{
-    width: 97vw;
+    width: 100%;
     height: 900px;
     display: flex;
     margin: auto;
@@ -8,6 +8,7 @@
     padding: 0;
     margin: 130px auto;
     box-sizing: border-box;
+    /* border: 1px firebrick solid; */
     
 }
 .content1_contact{
@@ -20,7 +21,8 @@
     align-items: center;
     background-color: #F6F6F6;
     position: relative;
-    padding-top: 20px;
+    margin-top: 13px;
+    /* padding-top: 20px; */
 
 }
 .heading1_contact{
@@ -57,11 +59,11 @@
 }
 
 .content2_contact{
-    /* border: 2px solid gray; */
+    /* border: 1px solid gray; */
     display: flex;
     flex-direction: column;
     width: 45%;
-    height: 95%;
+    height: 100%;
     /* justify-content: space-between; */
     align-items: start;
    /* gap: 5px; */
@@ -70,6 +72,7 @@
 .heading2_contact{
     width: 90%;
     display: flex;
+gap: 0;
     flex-direction: column;
     /* border: 2px solid gray; */
    justify-content: center;
@@ -108,9 +111,7 @@
     font-size: 20px;
 }
 
-::placeholder{
-    padding-left: 30px;
-}
+
 .inputform_contact{
     width: 100%;
     height: 50px;
@@ -118,14 +119,17 @@
     border-radius: 5px;
     outline:none;
     border: #F6F6F6 ;
+    padding-left: 20px;
 }
 .inputdesc_contact{
     width: 100%;
-    height: 155px;
+    height: 178px;
     background-color: #F6F6F6;
     border-radius: 5px;
     outline:none;
     border: #F6F6F6 ;
+    padding: 20px;
+    resize: none;
 }
 .inputbox_contact{
     display: flex;
@@ -153,7 +157,7 @@
 
 
 
-  span {
+ .er_contact {
     color: red;
     font-size: 12px;
 }
@@ -222,7 +226,7 @@
     .inputdesc_contact{
         height: 130px;
     }
-    span {
+    .er_contact{
         color: red;
         font-size: 10px;
     }
@@ -294,7 +298,7 @@
                 margin-bottom: 10px;
     }
 
-    span {
+    .er_contact {
         color: red;
         font-size: 8px;
     }

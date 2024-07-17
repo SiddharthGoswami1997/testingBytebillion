@@ -89,7 +89,7 @@
 
 .ourservices__details_content {
   margin-top: 10px;
-  text-align: justify;
+  /* text-align: justify; */
   font-size: 14px;
   width: 90%;
   animation-name: scale;

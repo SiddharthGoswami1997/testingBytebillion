@@ -1,20 +1,24 @@
 .container_project{
-    width: 95vw;
-    height: 700px;
+    width: 100%;
+    height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
-    gap: 50px;
-    margin-top: 150px;
+    gap: 20px;
+    /* border: red 1px solid; */
+    /* margin-top: 150px; */
 }
 .h1_project{
     font-size: 32px;
     text-align: center;
 }
 .p_project{
-    font-size: 16;
+    font-size: 16px;
     width: 70%;
     margin: 0 auto;
     /* padding-left: 25%; */
 }
+/* @media screen and (max-width:px) {
+    
+} */

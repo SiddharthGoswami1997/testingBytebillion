@@ -105,30 +105,169 @@
 // }
 
 // export default Swipercarousel;
-import React from "react";
-import Slider from "react-slick";
+// import React from "react";
+// import Slider from "react-slick";
 // import "./Slidecomp.css"; // Import the CSS file
 
-function Slidercomp() {
+// function Slidercomp() {
+//   const settings = {
+//     dots: false,
+//     centerPadding: "60px",
+//     className: "center",
+//     autoplay: true,
+//     centerMode: true,
+//     infinite: true,
+//     autoplaySpeed: 3000,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//   };
+
+//   return (
+//     <div className="slider-container">
+//       <Slider {...settings}>
+//         {/* Your slide components here */}
+//       </Slider>
+//     </div>
+//   );
+// }
+
+// export default Slidercomp;
+
+
+
+
+// import React, { useRef, useState } from 'react';
+// Import Swiper React components
+// import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+// import 'swiper/css';
+// import 'swiper/css/pagination';
+
+// import './styles.css';
+
+// import required modules
+// import { Pagination } from 'swiper/modules';
+
+// export default function App() {
+//   return (
+//     <>
+//       <Swiper
+//         slidesPerView={3}
+//         spaceBetween={30}
+//         pagination={{
+//           clickable: true,
+//         }}
+//         modules={[Pagination]}
+//         className="mySwiper"
+//       >
+//         <SwiperSlide>Slide 1</SwiperSlide>
+//         <SwiperSlide>Slide 2</SwiperSlide>
+//         <SwiperSlide>Slide 3</SwiperSlide>
+//         <SwiperSlide>Slide 4</SwiperSlide>
+//         <SwiperSlide>Slide 5</SwiperSlide>
+//         <SwiperSlide>Slide 6</SwiperSlide>
+//         <SwiperSlide>Slide 7</SwiperSlide>
+//         <SwiperSlide>Slide 8</SwiperSlide>
+//         <SwiperSlide>Slide 9</SwiperSlide>
+//       </Swiper>
+//     </>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+import React from "react";
+import Slider from "react-slick";
+import Card from "../Components/Career/Components2/CareerArea/Card/Card"
+function MultipleItems() {
   const settings = {
-    dots: false,
-    centerPadding: "60px",
-    className: "center",
-    autoplay: true,
-    centerMode: true,
+    dots: true,
     infinite: true,
-    autoplaySpeed: 3000,
-    slidesToShow: 3,
+    speed: 500,
+    slidesToShow: 2,
+    centerPadding:20,
     slidesToScroll: 1,
   };
 
+
+  const data = [
+    {
+      logo:'/Images/Card_cloud.png',
+      alter:"cloud",
+      title:'Cloud',
+      desc:`The cloud is revolutionizing the IT industry, and we're at the forefront of innovation.  If you're passionate about technology and want to be part of a team that's shaping the future, then a cloud career with us is the perfect launchpad.`
+    },
+    {
+      logo:'/Images/Card_mern.png',
+      alter:"mern",  
+      title:'MERN Stack',
+      desc:`Are you a talented developer passionate about building dynamic and scalable web applications?  If you thrive on the power of JavaScript and love crafting user-friendly experiences, then a MERN career with us is the perfect opportunity to unleash your potential.`
+    },
+    {
+      logo:'/Images/Card_ml.png',
+      alter:"ml",
+      title:'Machine Learning',
+      desc:`Are you fascinated by the potential of artificial intelligence to transform our world?  If so, then a career in Machine Learning (ML) with us is your chance for, turning data into gold.`
+    },
+    {
+      logo:'/Images/Card_web.png',
+      alter:"web",
+      title:'Web development',
+      desc:`Are you a creative problem-solver with a knack for building intuitive and engaging web experiences? Do you thrive on turning ideas into reality through the power of code? Then a web development career with us is your chance to make a real impact.`
+    },
+    {
+      logo:'/Images/Card_mobile.png',
+      alter:"mobile",
+      title:'Mobile development',
+      desc:`Are you obsessed with crafting experiences that fit perfectly in the palm of your hand?  Then ditch the desktop and join our mobile development team!  We're building the apps that are transforming the way people live, work, and play.`
+    },
+    {
+      logo:'/Images/Card_ui.png',
+      alter:"ui",
+      title:'UI/UX development',
+      desc:`Do you have a keen eye for detail and a desire to translate complex ideas into user-friendly interfaces?  If so, then a UI/UX development career with us is the perfect opportunity to turn your passion into a reality.`
+    },
+    
+  ]
+  
+
+
+
   return (
-    <div className="slider-container">
+    <div className="slider-container"  style={{display:'flex',justifyContent:'space-between'}}>
       <Slider {...settings}>
-        {/* Your slide components here */}
+        <div>
+        <Card colour={'#F58634'}  logo={data[0].logo} alter={data[0].alter} title={data[0].title} desc={data[0].desc}/>
+        </div>
+        <div>
+        <Card colour={'#7D4FCE'} logo={data[1].logo} alter={data[1].alter} title={data[1].title} desc={data[1].desc}/>
+        </div>
+        <div>
+        <Card colour={'#1978B2'} logo={data[2].logo} alter={data[2].alter} title={data[2].title} desc={data[2].desc}/>
+        </div>
+        <div>
+        <Card colour={'#FA4E54'} logo={data[3].logo} alter={data[3].alter} title={data[3].title} desc={data[3].desc}/>
+        </div>
+        <div>
+        <Card colour={'#EFA00B'} logo={data[4].logo} alter={data[4].alter} title={data[4].title} desc={data[4].desc}/>
+        </div>
+        <div>
+        <Card colour={'#57007B'} logo={data[5].logo} alter={data[5].alter} title={data[5].title} desc={data[5].desc}/>
+        </div>
+       
       </Slider>
     </div>
   );
 }
 
-export default Slidercomp;
+export default MultipleItems;

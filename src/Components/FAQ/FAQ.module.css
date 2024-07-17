@@ -5,9 +5,10 @@
     gap: 70px;
     align-items: center;
     height: 400px ;
-    width: 97vw;
-    margin: 100px auto;
+    width: 100%;
+    margin:auto;
     padding: 20px;
+    /* border: olive 1px solid; */
   }
   
   .h1_faq {
@@ -19,7 +20,7 @@ text-align: center;
   .item_faq {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     /* gap: 30px; */
     width: 95%;
     height: 40%;
@@ -29,8 +30,10 @@ text-align: center;
     .container_faq {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      padding: 6px;   
+      /* justify-content: space-around; */
+      padding: 6px;  
+      /* gap: 50px;  */
+      height: 100%;
     }
   
     .item_faq {

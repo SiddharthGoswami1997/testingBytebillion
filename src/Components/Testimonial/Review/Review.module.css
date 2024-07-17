@@ -1,10 +1,10 @@
-.reviews_box {
+/* .reviews_box {
     display: flex;
     margin-top: 50px;
     justify-content: space-around;
-    width: 95vw;
-    /* border: 2px dashed rgb(8, 8, 8); */
-}
+    width: 100%;
+    border: 2px dashed rgb(8, 8, 8);
+} */
 
 .review_single_box {
     background-color: #ffeea937;
@@ -63,4 +63,13 @@
    justify-content: center;
    align-items: center;
    font-size: 25px;
+}
+
+
+@media screen and (max-width: 450px) {
+    .review_single_box {
+        height: 300px;
+    
+    }  
+    
 }

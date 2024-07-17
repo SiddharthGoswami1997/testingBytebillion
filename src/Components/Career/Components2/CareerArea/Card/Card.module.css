@@ -4,13 +4,121 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-   
+    gap: 30px;
+   background-color: white;
     border-radius: 6px;
     padding: 30px;
+
+/* --------------- */
+background-color: #fff;
+    scale: 1.01;
+    transition: transform 0.3s ease-in, scale 0.3s ease-in;
+    cursor: pointer;
+
 }
+
+
+@keyframes changeBackground1 {
+    0% {
+        background-color: #fff; 
+    }
+    30% {
+        background-color: #F6F5F6; 
+    }
+    70% {
+        background-color: #FDE2CE; 
+    }
+    100% {
+        background-color: #FDE2CE; 
+    }
+}
+@keyframes changeBackground2 {
+    0% {
+        background-color: #fff; 
+    }
+    30% {
+        background-color: #F6F5F6; 
+    }
+    70% {
+        background-color: #FBD0D1; 
+    }
+    100% {
+        background-color: #FBD0D1; 
+    }
+}
+@keyframes changeBackground3 {
+    0% {
+        background-color: #fff; 
+    }
+    30% {
+        background-color: #F6F5F6; 
+    }
+    70% {
+        background-color: #FCECCF; 
+    }
+    100% {
+        background-color: #FCECCF; 
+    }
+}
+@keyframes changeBackground4 {
+    0% {
+        background-color: #fff; 
+    }
+    30% {
+        background-color: #F6F5F6; 
+    }
+    70% {
+        background-color: #D9E8F2; 
+    }
+    100% {
+        background-color: #D9E8F2; 
+    }
+}
+@keyframes changeBackground5 {
+    0% {
+        background-color: #fff; 
+    }
+    30% {
+        background-color: #F6F5F6; 
+    }
+    70% {
+        background-color: #F7E5FF; 
+    }
+    100% {
+        background-color: #F7E5FF; 
+    }
+}
+
+
+.box_card:nth-child(1):hover {
+    scale: 1.02;
+    animation: changeBackground1 1.2s forwards;
+}
+.box_card:nth-child(2):hover {
+    scale: 1.02;
+    animation: changeBackground2 1.2s forwards;
+}
+.box_card:nth-child(3):hover {
+    scale: 1.02;
+    animation: changeBackground3 1.2s forwards;
+}
+.box_card:nth-child(4):hover {
+    scale: 1.02;
+    animation: changeBackground4 1.2s forwards;
+}
+.box_card:nth-child(5):hover {
+    scale: 1.02;
+    animation: changeBackground5 1.2s forwards;
+}
+/* -------------------------------- */
+
+
+
 .img_card{
+    
     width: 50px;
     height: 50px;
+    object-fit: initial;
 }
 .title_card{
     font-size: 20px;
@@ -18,4 +126,84 @@
 }
 .content_card{
     font-size: 14px;
+}
+@media screen and (max-width:1120px) {
+    .box_card{
+        width: 70%;
+        height:330px;
+        /* padding: 15px; */
+        gap: 20px;
+        /* justify-content: ; */
+        padding: 20px;
+    }
+    .title_card{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .content_card{
+        font-size: 15px;
+    }
+    /* .box_card{
+        padding: 15px;
+        gap: 10px;
+    } */
+}
+@media screen and (max-width:745px) {
+    .box_card{
+        width: 230px;
+        height:270px;
+        padding: 5px;
+       gap: 0px;
+       justify-content: center;
+       padding: 15px;
+        
+    }
+    .title_card{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .content_card{
+        font-size: 14px;
+    }
+   
+}
+@media screen and (max-width:600px) {
+    .box_card{
+
+        width: 330px;
+        height:275px;
+        padding: 20px;
+       gap: 0px;
+        
+    }
+    
+.box_card:nth-child(1):hover {
+    scale: 1;
+    animation: none;
+}
+.box_card:nth-child(2):hover {
+    scale: 1;
+    animation: none;
+}
+.box_card:nth-child(3):hover {
+    scale: 1;
+    animation: none;
+}
+.box_card:nth-child(4):hover {
+    scale: 1;
+    animation: none;
+}
+.box_card:nth-child(5):hover {
+    scale: 1;
+    animation: none;
+}
+   
+    .title_card{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .content_card{
+        font-size: 16px;
+    }
+   
 }

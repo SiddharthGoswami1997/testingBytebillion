@@ -9,6 +9,7 @@ import Bstracker from "./Graph/Bstracker/Bstracker";
 import Totalproject from "./Graph/Totalproject/Totalproject"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -22,7 +23,7 @@ const Home = () => {
 }, []);
 
   return (
-    <>
+    <div className={styles.container}>
       <section className={styles.container_home}>
         <div className={styles.content1_home} data-aos="zoom-in" data-aos-delay="300"data-aos-duration="1500">
           <h1 data-aos="zoom-in" data-aos-delay="300"data-aos-duration="1500" className={styles.h1_home}>Enhance Your Business Efficiency </h1>
@@ -31,10 +32,10 @@ const Home = () => {
             teams, or seamlessly integrate our vetted developers into your
             existing workforce.
           </p>
-          <button className={styles.btn_home} data-aos="zoom-in" >Contact Us</button>
+         <Link to={'/contactus'}><button className={styles.btn_home} data-aos="zoom-in" >Contact Us</button></Link> 
         </div>
         <div className={styles.content2_home} >
-        <img src="/Images/Homeresponsive_image.png" alt="home" className={styles.reponsivehome_image}/>
+        <img src="/Images/Homeresponsive_image.png" alt="home" className={styles.reponsivehome_image} data-aos="zoom-in"/>
 
           <div className={styles.content2box_home}>
             <img src="/Images/Homeresponsive_image.png" alt="home" className={styles.reponsivehome_image}/>
@@ -67,9 +68,9 @@ const Home = () => {
 
        <AboutUs />
     <Projects />
-    {/* <Testimonial/> */}
+    <Testimonial/>
        <FAQ />
-    </>
+    </div>
   );
 };
 
