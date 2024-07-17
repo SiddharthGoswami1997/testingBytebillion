@@ -72,7 +72,8 @@ padding: 30px;
     width: 640px;
     height: 100px;
     padding: 10px; 
-    text-wrap: wrap;  
+    text-wrap: wrap; 
+    resize: none; 
 
 }
 .fileupload_project{

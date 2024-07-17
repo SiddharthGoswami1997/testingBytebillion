@@ -1,20 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  
+    gap: 30px;
+    margin: 100px auto;
+}
+
+
+
+/* *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 .container_home {
     box-sizing: border-box;
     width: 98%;
     
-    height: 750px;
+    height: 100%;
     display: flex;
     align-items: center;
     gap: 30px;
          /*Added to center the content horizontally */
-    margin: auto;
+   
     /* margin-top: 60px; */
     /* border: 1px dashed black; */
     /* background-color: red; */
@@ -47,6 +59,7 @@
  width: 150px;
  height: 40px;
  box-shadow:0 4px 4px 0 #0000003d ;
+ cursor: pointer;
 }
 
 .content2_home {
@@ -168,12 +181,16 @@
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center; /* Ensure centering in smaller screens */
-        height: 620px;
+        height: 100%;
+        /* border: #1F3255 1px solid; */
+        gap: 0px;
+      
     }
 
     .content1_home {
         width: 350px;
         height: 300px;
+        /* border: #9c2333 1px solid; */
     }
 
     .h1_home {
@@ -186,11 +203,14 @@
     }
 
     .content2_home {
-        width: 350px;
-        height: 300px;
+        width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
-        justify-content: center; /* Ensure centering in smaller screens */
+        justify-content: center;
+        /* border: #1F3255 1px solid; */
+
+         /* Ensure centering in smaller screens */
     }
 
     .content2box_home {
@@ -201,6 +221,6 @@
         height: 100%;
         display: block;
         width: 90%;
-        object-fit: contain;
+        object-fit: inherit;
     }
 }

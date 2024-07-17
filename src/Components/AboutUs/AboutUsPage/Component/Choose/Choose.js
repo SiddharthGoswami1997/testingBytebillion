@@ -1,4 +1,7 @@
+import { useEffect } from 'react';
 import styles from './Choose.module.css';
+import AOS from 'aos'
+import "aos/dist/aos.css"
 
 const details = [
   {
@@ -40,9 +43,14 @@ const details = [
 ];
 
 const Choose = () => {
+
+  useEffect(()=> {
+    AOS.init({duration: "3000"})
+  },[])
+
   return (
     <div className={styles.choose__container}>
-      <h1 className={styles.choose__heading}>Why Choose Us</h1>
+      <h1 className={styles.choose__heading} data-aos="zoom-in">Why Choose Us</h1>
       <div className={styles.choose__mainBox}>
         {details.map((detail, index) => (
           <div key={index} className={`${styles.choose__box} ${styles[detail.animationClass]}`}>

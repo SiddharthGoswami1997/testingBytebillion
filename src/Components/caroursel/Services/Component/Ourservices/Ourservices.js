@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Ourservices.module.css";
-// import AOS from 'aos'
-// import "aos/dist/aos.css"
+import AOS from 'aos'
+import "aos/dist/aos.css"
 
 const data = [
   { name: "Web Development", image: '/Images/Ourservices/web_development.png', alt: 'Web Development', content: "Web development involves creating, building, and maintaining websites and web applications. Developers use frameworks and tools like React, Angular, Vue.js, Node.js, and Django to streamline the development process and create dynamic, interactive web experiences." },
@@ -22,9 +22,9 @@ const Ourservices = () => {
     setActiveimage(image);
   };
 
-  // useEffect(()=> {
-  //   AOS.init({duration: "1500"})
-  // },[])
+  useEffect(()=> {
+    AOS.init({duration: "1500"})
+  },[])
 
   return (
     <div className={styles.ourservices__main_box}>
@@ -36,14 +36,14 @@ const Ourservices = () => {
 
       <div className={styles.ourservices__box}>
         <div className={styles.ourservices__left_box}>
-          <div className={styles.ourservices__circle}>
+          <div className={styles.ourservices__circle} data-aos="fade-up">
             <img src={activeimage} alt="Active" className={styles.ourservices__image} />
           </div>
         </div>
 
         <div className={styles.ourservices__right_box}>
           {data.map((item, index) => (
-            <div key={index} className={styles.ourservices__serviceItem}>
+            <div key={index} className={styles.ourservices__serviceItem} data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               <div className={styles.ourservices__innerserviceitem} onClick={() => handleClick(index, item.image)}>
               <h4  className={styles.ourservices__name}>{item.name}</h4>
                <span className={`${styles.plus_icon} ${activeindex === index ? styles.active : ''}`}></span>

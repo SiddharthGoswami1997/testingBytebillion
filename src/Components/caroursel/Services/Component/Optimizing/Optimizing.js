@@ -1,11 +1,19 @@
+import { useEffect } from "react";
 import styles from "./Optimizing.module.css";
+import AOS from 'aos'
+import "aos/dist/aos.css"
 
 const Optimizing = () => {
+
+  useEffect(()=> {
+    AOS.init({duration: "3000"})
+  },[])
+
   return (
     <div className={styles.optimizing__container}>
       <div className={styles.optimizing__left}>
-        <h2 className={styles.optimizing__heading}>Optimizing talent acquisition with superior IT staff augmentation services</h2>
-         <hr className={styles.optimizing__lines}/>
+        <h2 className={styles.optimizing__heading} data-aos="zoom-in">Optimizing talent acquisition with superior IT staff augmentation services</h2>
+         <hr className={styles.optimizing__lines} data-aos="zoom-in"/>
       </div>
 
       <div className={styles.optimizing__right}>

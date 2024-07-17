@@ -1,6 +1,27 @@
-import React from 'react'
+// import React, { useRef, useState } from 'react';
+import React from "react";
+// import MultipleItems from "../../../../Testing/Swipercarousel";
+
+
+
+
+
+
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
+
+// import required modules
+import { Pagination,Autoplay} from 'swiper/modules';
 import styles from './CareerArea.module.css'
 import Card from './Card/Card'
+import SwiperButton from "./SwiperButton";
 
 const CareerArea = () => {
 
@@ -45,6 +66,7 @@ const data = [
 ]
 
   return (
+    <>
     <section className={styles.container_career}>
     <div className={styles.heading_career}>
       <h1 className={styles.h1_career}>
@@ -54,7 +76,7 @@ const data = [
     <div className={styles.content_career}>
       <div className={styles.container1_career}>
     <Card colour={'#F58634'}  logo={data[0].logo} alter={data[0].alter} title={data[0].title} desc={data[0].desc}/>
-    <Card colour={'#7D4FCE'} logo={data[1].logo} alter={data[1].alter} title={data[1].title} desc={data[1].desc}/>
+    <Card colour={'#7D4FCE'} length={"75px"} logo={data[1].logo} alter={data[1].alter} title={data[1].title} desc={data[1].desc}/>
     <img src='/Images/Career_laptop.png' alt='team' className={styles.laptop_career}/>
     <Card size={'550px'} displ={'flex'} align={'center'} dept={'190px'} colour={'#1978B2'} logo={data[2].logo} alter={data[2].alter} title={data[2].title} desc={data[2].desc}/>
       </div>
@@ -70,6 +92,109 @@ const data = [
     </div>
     
     </section>
+
+
+ <div className={styles.reponsiveslider_career}>
+  <div>
+  <img src='/Images/Career_laptop.png' alt='team' className={styles.laptop_career}/>
+
+  </div>
+<div className={styles.slidercontainer_career}>
+
+<Swiper
+
+        loop={true}
+        slidesPerView={2}
+        spaceBetween={20}
+        breakpoints = {{
+          300:{
+            slidesPerView:1,
+            spaceBetween:20, 
+          },
+          600:{slidesPerView:2,
+            spaceBetween:20,
+          },
+          745:{slidesPerView:2,
+            spaceBetween:20,
+          },
+          1120:{slidesPerView:2,
+            spaceBetween:20,
+          }
+        }}
+      
+      
+          
+          
+        
+
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+          style: {
+            
+            'swiper-pagination-bullet-active': 'orange' // Orange color for active bullet
+        }
+        }}
+        modules={[Autoplay,Pagination]}
+        className={styles.mySwiper}
+      >
+
+        <div className={styles.slides_career}>
+        <SwiperSlide className={styles.slide_card}> <Card colour={'#F58634'}  logo={data[0].logo} alter={data[0].alter} title={data[0].title} desc={data[0].desc}/>        </SwiperSlide>
+        <SwiperSlide className={styles.slide_card}>        <Card colour={'#7D4FCE'} length={"75px"}  logo={data[1].logo} alter={data[1].alter} title={data[1].title} desc={data[1].desc}/></SwiperSlide>
+
+       
+        <SwiperSlide className={styles.slide_card}>    <Card colour={'#1978B2'} logo={data[2].logo} alter={data[2].alter} title={data[2].title} desc={data[2].desc}/>
+
+        </SwiperSlide>
+        <SwiperSlide className={styles.slide_card}>    <Card colour={'#FA4E54'} logo={data[3].logo} alter={data[3].alter} title={data[3].title} desc={data[3].desc}/>
+
+        </SwiperSlide>
+        <SwiperSlide className={styles.slide_card}>    <Card colour={'#EFA00B'} logo={data[4].logo} alter={data[4].alter} title={data[4].title} desc={data[4].desc}/>
+
+        </SwiperSlide>
+        <SwiperSlide className={styles.slide_card}>    <Card colour={'#57007B'} logo={data[5].logo} alter={data[5].alter} title={data[5].title} desc={data[5].desc}/>
+        </SwiperSlide>
+        
+        </div>
+        <div className={styles.pagination_swiper} >
+        {/* <SwiperButton/>  */}
+       
+        </div>
+          
+      </Swiper>
+
+
+</div>
+</div> 
+
+
+
+{/* 
+
+
+
+
+
+
+
+
+
+<div className={styles.reponsiveslider_career}>
+  <div>
+  <img src='/Images/Career_laptop.png' alt='team' className={styles.laptop_career}/>
+
+  </div>
+<div className={styles.slidercontainer_career}>
+
+<MultipleItems/>
+
+</div>
+</div> */}
+    </>
   )
 }
 

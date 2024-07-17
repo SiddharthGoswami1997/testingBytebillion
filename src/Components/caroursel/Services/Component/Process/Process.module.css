@@ -1,7 +1,6 @@
 .process__main_box {
     padding: 30px;
     width: auto;
-    /* border: 1px solid red; */
 }
 .process__top {
     display: flex;
@@ -38,36 +37,19 @@
     flex-direction: column;
     gap: 10px;
 }
-.process__smallheading {
-}
+
 .process__text {
     font-weight: 400;
-}
+} 
 
 .process__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    gap: 90px;
+    gap: 85px;
 } 
 
-.process__container::before {
-    content: '';
-    position: absolute;
-    top: 25px;
-    bottom: 25px;
-    width: 2px;
-    background: repeating-linear-gradient(
-        to bottom,
-        #000,
-        #000 2px,
-        transparent 2px,
-        transparent 6px
-    );
-    background-size: 100% 100px;
-    animation: moveDots 4s linear infinite;
-}
 
 .step {
     width: 22px;
@@ -83,8 +65,14 @@
     opacity: 0;
     animation: appear 1s forwards;
     z-index: 1;
-    box-shadow: 0 0 1px 5px rgba(245, 134, 52, 0.3);
+    box-shadow: 0 0 1px 7px rgba(245, 134, 52, 0.3);
 }
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}
+
 
 .step:nth-child(1) {
     animation-delay: 0s;
@@ -100,24 +88,56 @@
 
 .step:nth-child(4) {
     animation-delay: 3s;
+    margin-bottom: 15px;
 }
 
-@keyframes appear {
-    to {
-        opacity: 1;
-    }
+
+.vertical_lineone {
+
+    width: 105px;
+    height: 28px;
+    position: absolute;
+    top: 65px;
+    animation: growOnScroll 20s forwards;
+}
+.vertical_lineone::before {
+    content: "---------------";
+    color: black;
+    
 }
 
-@keyframes moveDots {
+.vertical_linetwo {
+    width: 82px;
+    height: 27px;
+    position: absolute;
+    top: 162px;
+    animation: growOnScroll 20s forwards linear;
+}
+.vertical_linetwo::before {
+    content: "---------------";
+    color: black;
+}
+
+.vertical_linethree {
+    width: 105px;
+    height: 28px;
+    position: absolute;
+    top: 280px;
+    animation: growOnScroll 20s forwards linear;
+}
+.vertical_linethree::before {
+    content: "---------------";
+    color: black;
+}
+
+@keyframes growOnScroll {
     0% {
-        background-position: 0 0;
+        transform: rotate(90deg) scaleY(0);
     }
     100% {
-        background-position: 0 50px;
+        transform: rotate(90deg) scaleY(1);
     }
 }
-
-
 
 
 
@@ -125,8 +145,34 @@
     .process__container {
         gap:99px;
     }
-}
 
+    .vertical_lineone::before {
+        content: "-----------------";
+        color: black;
+    }
+    .vertical_linetwo {
+        width: 90px;
+        height: 27px;
+        position: absolute;
+        top: 182px;
+        animation: growOnScroll 20s forwards linear;
+    }
+    .vertical_linetwo::before {
+        content: "-----------------";
+        color: black;
+    }
+    .vertical_linethree {
+        width: 103px;
+        height: 27px;
+        position: absolute;
+        top: 308px;
+        animation: growOnScroll 20s forwards linear;
+    }
+    .vertical_linethree::before {
+        content: "------------------";
+        color: black;
+    }
+}
 @media screen and (max-width: 722px) {
     .process__data {
         gap: 40px;
@@ -141,17 +187,66 @@
     .process__container {
         gap:106px;
     }
+    .vertical_lineone::before {
+        content: "------------------";
+        color: black;
+    }
+    .vertical_linetwo {
+        width: 100px;
+        height: 27px;
+        position: absolute;
+        top: 194px;
+        animation: growOnScroll 20s forwards linear;
+    }
+    .vertical_linetwo::before {
+        content: "-------------------";
+        color: black;
+    }
+    .vertical_linethree {
+        width: 103px;
+        height: 27px;
+        position: absolute;
+        top: 323px;
+        animation: growOnScroll 20s forwards linear;
+    }
+    .vertical_linethree::before {
+        content: "-------------------";
+        color: black;
+    }
 }
 @media screen and (max-width: 370px) {
     .process__container {
-        gap:115px;
+        gap:104px;
     }
     .process__dataitem {
         gap: 5px;
     }
-    .step_131yb_139:nth-child(4) {
-        border: 2px solid red;
-        margin-top: 28px;
+
+    .step:nth-child(4) {
+        margin-top: 15px;
+        padding-top: 100px;
+    }
+    .vertical_linetwo {
+        width: 113px;
+        height: 27px;
+        position: absolute;
+        top: 197px;
+        animation: growOnScroll 20s forwards linear;
+    }
+    .vertical_linetwo::before {
+        content: "-------------------";
+        color: black;
+    }
+    .vertical_linethree {
+        width: 103px;
+        height: 27px;
+        position: absolute;
+        top: 316px;
+        animation: growOnScroll 20s forwards linear;
+    }
+    .vertical_linethree::before {
+        content: "------------------";
+        color: black;
     }
 }
 @media screen and (max-width: 322px) {
@@ -160,5 +255,20 @@
     }
     .step_131yb_139:nth-child(4) {
         margin-top: 40px;
+    }
+    .vertical_lineone::before {
+        content: "--------------------";
+        color: black;
+    }
+    .vertical_linetwo {
+        width: 110px;
+        height: 27px;
+        position: absolute;
+        top: 210px;
+        animation: growOnScroll 20s forwards linear;
+    }
+    .vertical_linetwo::before {
+        content: "---------------------";
+        color: black;
     }
 }

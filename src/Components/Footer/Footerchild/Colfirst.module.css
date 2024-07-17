@@ -23,6 +23,13 @@
     flex-direction: column;
     gap: 10px;
 }
+
+.linktext_colthird{
+    text-decoration: none;
+   color: black;
+    
+}
+
 @media screen and (max-width:670px) {
     .container_colfirst{
         font-size: 12px;

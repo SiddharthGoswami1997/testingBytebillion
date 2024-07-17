@@ -1,10 +1,11 @@
 .container_staff{
     width: 100%;
-    height:790px;
+    height:820px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+
     /* border: 1px solid greenyellow; */
     /* margin: 130px auto; */
 }

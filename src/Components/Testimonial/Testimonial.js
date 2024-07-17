@@ -11,9 +11,9 @@ const Testimonial = () => {
 
         <div className={styles.review}>
         <Review/>
+        {/* <Review/>
         <Review/>
-        <Review/>
-        <Review/>
+        <Review/> */}
 
         </div>
     </div>

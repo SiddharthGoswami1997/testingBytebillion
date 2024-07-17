@@ -32,11 +32,11 @@
 
 
 .handshakeimg_together{
-    height: 50px;
+    height: 57px;
     /* width: 110px; */
     /* border-radius: 1000px; */
     margin-top: 13px;
-    object-fit: cover;
+    object-fit: initial;
     /* box-shadow: 1px 1px 15px #888888; */
 }
 
@@ -126,7 +126,7 @@ position:absolute;
         height: 50px;
        
         margin-top: 13px;
-        object-fit: cover;
+        object-fit: initial;
         
     }
 
@@ -333,7 +333,7 @@ object-fit: contain;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border: #1F3255 solid 1px;
+        /* border: #1F3255 solid 1px; */
     }
     .h1_together{
         font-size: 1.7rem;
@@ -347,10 +347,10 @@ object-fit: contain;
     }
        
     .handshakeimg_together{
-        height: 30px;
+        height: 35px;
        
-        margin-top: 13px;
-        object-fit: cover;
+        margin-top: 11px;
+        object-fit: initial;
         
     }
 
@@ -378,8 +378,8 @@ object-fit: contain;
         
         }
         .sarrow_together{
-            bottom: -10px;
-            left: 30px;
+            bottom: -30px;
+            left: -10px;
             position: absolute;
     }
     

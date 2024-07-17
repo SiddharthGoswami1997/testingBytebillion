@@ -1,6 +1,14 @@
-import React from "react";
+import {React,useEffect} from "react";
 import styles from "./Ourvalues.module.css";
+import AOS from 'aos'
+import "aos/dist/aos.css"
+
 const Ourvalues = () => {
+
+  useEffect(()=> {
+    AOS.init({duration: "3000"})
+  },[])
+
   const data = [
     {
       url: "Images/ourvalues_innovation.png",
@@ -33,6 +41,7 @@ const Ourvalues = () => {
   ];
 
   return (
+    <>
     <section className={styles.container_ourvalues}>
       <div className={styles.heading_ourvalues}>
         <h1 className={styles.h1_ourvalues}>Our Values</h1>
@@ -40,7 +49,7 @@ const Ourvalues = () => {
       </div>
       <div className={styles.cards_ourvalues}>
         {data.map((item, index) => (
-          <div className={styles.card_ourvalues} key={index}>
+          <div className={styles.card_ourvalues} key={index} data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}>
             <img
               src={item.url}
               alt={item.alt}
@@ -52,6 +61,26 @@ const Ourvalues = () => {
         ))}
       </div>
     </section>
+    <section className={styles.responsivecontainer_ourvalues}>
+      <div className={styles.heading_ourvalues}>
+        <h1 className={styles.h1_ourvalues}>Our Values</h1>
+        <div className={styles.h1underline_ourvalues}></div>
+      </div>
+      <div className={styles.cards_ourvalues}>
+        {data.map((item, index) => (
+          <div className={styles.card_ourvalues} key={index} >
+            <img
+              src={item.url}
+              alt={item.alt}
+              className={styles.cardpic_ourvalues}
+            />
+            <h2 className={styles.cardtitle_ourvalues}>{item.topic}</h2>
+            <p className={styles.cardpara_ourvalues}>{item.detail}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+    </>
   );
 };
 

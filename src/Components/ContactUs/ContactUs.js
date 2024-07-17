@@ -154,7 +154,7 @@ const ContactUs = () => {
               onChange={handleChange}
             />
 
-            <span>{error.name}</span>
+            <span className={styles.er_contact}>{error.name}</span>
           </div>
           <div className={styles.inputbox_contact}>
             <label className={styles.label_contact}>Email</label>
@@ -168,7 +168,7 @@ const ContactUs = () => {
               onChange={handleChange}
             />
 
-            <span>{error.email}</span>
+            <span className={styles.er_contact}>{error.email}</span>
           </div>
           <div className={styles.inputbox_contact}>
             <label className={styles.label_contact}>Phone Number</label>
@@ -183,14 +183,13 @@ const ContactUs = () => {
               onChange={handleChange}
             />
 
-            <span>{error.phone}</span>
+            <span className={styles.er_contact}>{error.phone}</span>
           </div>
           <div className={styles.inputbox_contact}>
             <label className={styles.label_contact}>Message</label>
             <textarea
               type="text"
-              placeholder={`
-Write your message here`}
+              placeholder={`Write your message here`}
               id="desc"
               name="message"
               className={styles.inputdesc_contact}
@@ -198,7 +197,7 @@ Write your message here`}
               onChange={handleChange}
             />
 
-            <span>{error.message}</span>
+            <span className={styles.er_contact}>{error.message}</span>
           </div>
         </form>
         <button

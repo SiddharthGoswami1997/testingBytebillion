@@ -1,6 +1,14 @@
-import React from "react";
+import { React, useEffect } from "react";
 import styles from "./Employeebenefit.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Employeebenefit = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: "3000",delay: "300" });
+  }, []);
+
   const data = [
     {
       url: "Images/Benefit_clock.png",
@@ -34,7 +42,7 @@ const Employeebenefit = () => {
         </h1>
         <div className={styles.h1underline_benefits}></div>
       </div>
-<div className={styles.cards_benefit}>
+<div className={styles.cards_benefit} data-aos="fade-up">
 
 {data.map((item,index)=>(<div key={index} className={styles.card_benefit}><div className={styles.cardpic_benefit}><img className={styles.pic_benefit} src={item.url} alt={item.alt}/></div><div className={styles.cardtext_benefit}><h2 className={styles.cardtitle_benefit}>{item.topic}</h2><p className={styles.cardpara_benefit}>{item.detail}</p></div></div>))}
 

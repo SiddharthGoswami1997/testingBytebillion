@@ -51,8 +51,7 @@ const JobEnquiry = () => {
             <label className={styles.formlabel_job}>Cover Letter</label>{" "}
             <textarea
               type="text"
-              placeholder="Just write a couple of sentences about why you love us and you will be doing better than 
-90% of applications."
+              placeholder="Just write a couple of sentences about why you love us and you will be doing better than 90% of applications."
               className={styles.textinput_job}
             ></textarea>
           </div>
