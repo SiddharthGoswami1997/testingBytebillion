@@ -93,7 +93,7 @@ padding: 20px;
 
 
 .btn_general{
-
+ cursor: pointer;
     background-color: #FF7D29;
     border-radius: 10px;
     font-weight: bold;
