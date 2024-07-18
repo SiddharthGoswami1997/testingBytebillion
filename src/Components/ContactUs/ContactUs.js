@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./ContactUs.module.css";
+import { toast } from "react-toastify";
+
 
 import { useState, useEffect } from "react";
 
@@ -81,7 +83,7 @@ const ContactUs = () => {
 
     if (Object.keys(newError).length === 0) {
       setFlag(true);
-      alert(`Congrats ${details.name}, you have submitted successfully!`);
+      toast.success(`Congrats ${details.name}, you have submitted successfully!`);
 
       setDetails({ name: "", email: "", phone: "", message: "" });
     } else {

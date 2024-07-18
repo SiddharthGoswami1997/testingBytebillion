@@ -1,102 +1,9 @@
-// import React from "react";
-// import styles from "./GenEnquiry.module.css";
-// const GenEnquiry = () => {
-//   return (
-//     <section className={styles.container_general}>
-//       <div className={styles.headingdiv_general}>
-//         <p className={styles.heading_general}>We’re Here To Help</p>
-//         <p className={styles.headingP_general}>
-//           Reach out to us for all your enquiries
-//         </p>
-//       </div>
-//       <form className={styles.form_general}>
-//         <div className={styles.formbox1_general}>
-//           <div className={styles.formcol1_general}>
-//             <div className={styles.formelem_general}>
-//               <label className={styles.formlabel_general}>Name</label>{" "}
-//               <input
-//                 type="text"
-//                 placeholder="EnterName"
-//                 className={styles.forminput_general}
-//               />
-//             </div>
-//             <div className={styles.formelem_general}>
-//               <label className={styles.formlabel_general}>Company Name</label>{" "}
-//               <input
-//                 type="text"
-//                 placeholder="Enter Company Name"
-//                 className={styles.forminput_general}
-//               />
-//             </div>
-//           </div>
-//           <div className={styles.formcol1_general}>
-//             <div className={styles.formelem_general}>
-//               <label className={styles.formlabel_general}>Email</label>{" "}
-//               <input
-//                 type="text"
-//                 placeholder="EnterEmail"
-//                 className={styles.forminput_general}
-//               />
-//             </div>
-//             <div className={styles.formelem_general}>
-//               <label className={styles.formlabel_general}>Phone Number</label>{" "}
-//               <input
-//                 type="text"
-//                 placeholder="Enter phone number"
-//                 className={styles.forminput_general}
-//               />
-//             </div>
-//           </div>
-//         </div>
-//         <div>
-//           <div className={styles.textelem_general}>
-//             <label for="cars" className={styles.formlabel_general}>
-//               When Can We help you with
-//             </label>
-//             <select id="cars" name="cars" className={styles.enquiryoption}>
-//               <option value="Select type of enquiry" style={{ padding: "20px" }}>
-//                 Select type of enquiry
-//               </option>
-//               <option value="Business Enquiry">Business Enquiry</option>
-//               <option value="Other">Other</option>
-              
-//             </select>
-//           </div>
-//         </div>
-//         <div>
-//           <div className={styles.textelem_general}>
-//             <label className={styles.formlabel_general}>Enquiry</label>{" "}
-//             <input
-//               type="text"
-//               placeholder="Help us know a little about your query"
-//               className={styles.textinput_general}
-//             />
-//           </div>
-//         </div>
-//       </form>
-//       <button className={styles.btn_general}>Send Enquiry</button>
-//     </section>
-//   );
-// };
-
-// export default GenEnquiry;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 import React, { useState, useEffect } from "react";
 import styles from "./GenEnquiry.module.css";
+import { toast } from 'react-toastify';
+
+
 
 const GenEnquiry = () => {
   const [details, setDetails] = useState({
@@ -180,12 +87,13 @@ const GenEnquiry = () => {
 
     if (Object.keys(newError).length === 0) {
       setFlag(true);
-      alert(`Congrats ${details.name}, your enquiry has been submitted successfully!`);
+      toast.success(`Congrats ${details.name}, Your Enquiry Have Been Submitted Successfully!`);
       setDetails({ name: "", company: "", email: "", phone: "", enquiry: "" });
     } else {
       setFlag(false);
     }
   };
+
   return (
     <section className={styles.container_general}>
       <div className={styles.headingdiv_general}>
@@ -194,6 +102,7 @@ const GenEnquiry = () => {
           Reach out to us for all your enquiries
         </p>
       </div>
+
       <form className={styles.form_general} onSubmit={handleSubmit}>
         <div className={styles.formbox1_general}>
           <div className={styles.formcol1_general}>
@@ -207,7 +116,7 @@ const GenEnquiry = () => {
                 value={details.name}
                 onChange={handleChange}
               />
-              <span>{error.name}</span>
+              <span className={styles.gen_errmsg}>{error.name}</span>
             </div>
             <div className={styles.formelem_general}>
               <label className={styles.formlabel_general}>Company Name</label>
@@ -219,7 +128,7 @@ const GenEnquiry = () => {
                 value={details.company}
                 onChange={handleChange}
               />
-              <span>{error.company}</span>
+              <span className={styles.gen_errmsg}>{error.company}</span>
             </div>
           </div>
           <div className={styles.formcol1_general}>
@@ -233,7 +142,7 @@ const GenEnquiry = () => {
                 value={details.email}
                 onChange={handleChange}
               />
-              <span>{error.email}</span>
+              <span className={styles.gen_errmsg}>{error.email}</span>
             </div>
             <div className={styles.formelem_general}>
               <label className={styles.formlabel_general}>Phone Number</label>
@@ -245,7 +154,7 @@ const GenEnquiry = () => {
                 value={details.phone}
                 onChange={handleChange}
               />
-              <span>{error.phone}</span>
+              <span className={styles.gen_errmsg}>{error.phone}</span>
             </div>
           </div>
         </div>
@@ -275,7 +184,7 @@ const GenEnquiry = () => {
               value={details.enquiry}
               onChange={handleChange}
             />
-            <span>{error.enquiry}</span>
+            <span className={styles.gen_errmsg}>{error.enquiry}</span>
           </div>
         </div>
         <button type="submit" className={styles.btn_general}>

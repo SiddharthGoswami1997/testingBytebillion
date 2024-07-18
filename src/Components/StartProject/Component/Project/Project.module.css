@@ -4,7 +4,10 @@
 .unselected_date{
     color: #a99f9f;
 }
-
+.project_errmsg {
+    color: red;
+    font-size: 14px;
+}
 .placeholder_label {
     position: absolute;
     bottom: 12px;
@@ -31,9 +34,9 @@
   }
   
   .filename_project {
-    right: 140px;
+    right: 125px;
     font-size: 14px;
-    color: #100f0f;
+    color: green;
     /* margin-top: 5px; */
     position: absolute;
     bottom: 60px;
@@ -86,7 +89,7 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
-
+    align-items: center;
 }
 .formbox1_project{
     display: flex;
@@ -171,7 +174,7 @@ background-color: #F6F6F6;
 .browseinput_project{
 visibility: hidden;
 }
-    .drag_project{
+.drag_project{
         width: 300px;
         height: 120px;
         display: flex;
@@ -184,9 +187,7 @@ visibility: hidden;
         width: 30px;
         height: 30px;
     }
-.dragtext_project{
 
-}
 
 .btn_project{
 cursor: pointer;
@@ -199,16 +200,6 @@ cursor: pointer;
    height: 40px;
    box-shadow:0 4px 4px 0 #0000003d ;
 
-
-    /* background-color: #FF7D29;
-   border-radius: 16px;
-   font-weight: bold;
-   color: white;
-  border:  #FF7D29;
-  width: 150px;
-  height: 40px;
-  box-shadow:0 4px rgba(56, 52, 52, 0.331) inset ;
-   */
 }
 @media screen and (max-width:660px) {
     .container_project{
@@ -249,6 +240,14 @@ cursor: pointer;
     }
     .formelem_project{
         align-items: flex-start;
+    }
+
+    .filename_project {
+        bottom: 70px;
+        right: 120px;
+    }
+    .drag_project {
+        display: none;
     }
 
 }

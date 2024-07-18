@@ -9,6 +9,10 @@
     /* position: absolute;
     top: 100px; */
 }
+.gen_errmsg {
+    color: red;
+    font-size: 14px;
+}
 .headingdiv_general{
     display: flex;
     flex-direction: column;
@@ -27,6 +31,7 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+    align-items: center;
 
 }
 .formbox1_general{
@@ -67,7 +72,6 @@ padding: 20px;
     flex-direction: column;
     gap: 10px;
  
-
 }
 .textinput_general{
     border-radius: 4px;
