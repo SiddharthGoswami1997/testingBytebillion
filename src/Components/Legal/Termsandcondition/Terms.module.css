@@ -1,37 +1,35 @@
 .container {
+    margin: 8% auto;
     padding: 20px 40px;
 }
 .heading {
-  padding: 40px 0px;
+    text-align: center;
+    padding: 40px 0;
 }
- .h3 {
-    margin-bottom: 25px;
+.h4, .h5, .h6 {
     color: #1F3255;
 }
-.lastUpdate {
-    display: inline;
-    border: 1.5px solid #F7A467;
-    padding: 10px 25px;
+.h4 {
+    font-size: 20px;
 }
-.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11 {
-    margin: 25px 0px;
+.h5, .h6 {
+    font-size: 18px;
+    margin-bottom: 5px;
 }
-.unorderlist {
+.box1, .box3, .box8 {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
-.list {
+.hr {
+    margin-top: 40px;
+}
+.box2, .box4, .box5, .box6, .box7 {
+    margin: 25px 0;
+}
+.box4 .paras, .box5 .paras, .box6 .paras, .box7 .paras {
+    margin-top: 15px;
+}
+.Privacy_li {
     margin-left: 20px;
-}
-.paragraph {
-    margin-top: 10px;
-}
-
-@media screen and (max-width: 340px) {
-    .lastUpdate {
-        display: inline;
-        border: 1.5px solid #F7A467;
-        padding: 0px;
-    }
 }

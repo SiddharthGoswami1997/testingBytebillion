@@ -38,7 +38,8 @@
   .heading {
     color: #FFFFFF;
     width: 70%;
-    text-align: left;
+    text-align: center;
+    /* border: 1px solid yellow; */
   }
   .btn {
     padding: 15px 40px;
@@ -54,4 +55,37 @@
   .btn:hover {
     background-color: white;
     color: black;
+  }
+
+  @media screen and (max-width:640px) {
+    .overlay {
+     
+      top: 10%;
+     
+    }
+    .heading {
+      color: #FFFFFF;
+      width: 90%;
+      text-align: center;
+      /* border: 1px solid yellow; */
+    }
+    .btn {
+      padding: 10px 30px;
+      
+    }
+  }
+
+  @media screen and (max-width:640px) {
+    .overlay {
+     
+      top: 10%;
+     
+    }
+    .heading {
+     
+      width: 90%;
+
+     
+    }
+    
   }

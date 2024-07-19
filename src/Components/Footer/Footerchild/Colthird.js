@@ -8,8 +8,9 @@ const Colsecond = () => {
    <p> <Link   className={styles.linktext_colthird}  to={'/'}>Home</Link></p>
    <p> <Link   className={styles.linktext_colthird}  to={'/aboutus'}>About</Link></p>
    <p> <Link   className={styles.linktext_colthird}  to={'/services'}>Services</Link></p>
-   <p> <Link   className={styles.linktext_colthird}  to={'/contactus'}>FAQ</Link></p>
-   <p>                <Link   className={styles.linktext_colthird}  to={'/contactus'}>Contact</Link>
+   {/* <p> <Link   className={styles.linktext_colthird}  to={'/contactus'}>FAQ</Link></p> */}
+   <p> <Link   className={styles.linktext_colthird}  to={'/career'}>Career</Link></p>
+   <p> <Link   className={styles.linktext_colthird}  to={'/contactus'}>Contact</Link>
    </p>
    
   </div>

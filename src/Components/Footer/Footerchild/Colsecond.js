@@ -1,17 +1,20 @@
 import React from 'react'
 import styles from './Colfirst.module.css'
+import { Link } from 'react-router-dom'
 const Colsecond = () => {
   return (
     <div className={styles.container_colsecond}>
   <h3>Services</h3> 
-   <p>Cloud</p>
-   <p>MERN Stack</p>
-   <p>Web development</p>
-   <p>Mobile development</p>
-   <p>UI/UX development</p>
-   <p>Machine learning</p>
-   <p>Staff Augmentation</p>
-  </div>
+   
+   <p> <Link   className={styles.linktext_colthird}  to={'/services'}>Cloud</Link></p>
+   <p> <Link   className={styles.linktext_colthird}  to={'/services'}>MERN Stack</Link></p>
+   <p> <Link   className={styles.linktext_colthird}  to={'/services'}>Web development</Link></p>
+   <p> <Link   className={styles.linktext_colthird}  to={'/services'}>Mobile development</Link></p>
+   <p> <Link   className={styles.linktext_colthird}  to={'/services'}>UI/UX development</Link></p>
+   <p> <Link   className={styles.linktext_colthird}  to={'/services'}>Machine learning</Link></p>
+   <p> <Link   className={styles.linktext_colthird}  to={'/services'}>Staff Augmentation</Link></p>
+
+    </div>
   )
 }
 

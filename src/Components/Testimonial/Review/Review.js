@@ -1,13 +1,20 @@
 import styles from "./Review.module.css"
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 const Review = () => {
+
+  useEffect(()=> {
+    AOS.init({duration: "1500"})
+  },[])
+
   return (
 
 
           // <div className={styles.reviews_box}>
 
 
-            <div className={styles.review_single_box} >
+            <div className={styles.review_single_box} data-aos="zoom-out" >
                 <div className={styles.clint_name}>
                 <h4>ClIENT NAME</h4>
                 </div>

@@ -30,7 +30,8 @@
 .logo_navbar{
     width: 157px;
     height: 41px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    margin-left: 35px;
     object-fit:contain;
   
 
@@ -54,6 +55,7 @@
   box-shadow:0 4px rgba(56, 52, 52, 0.331) inset ; */
 
 /* padding-right: 20px; */
+margin-right: 20px;
   background-color: #FF7D29;
   border-radius: 10px;
   font-weight: bold;
@@ -110,7 +112,7 @@
 
 }
 
-@media screen and (max-width:1048px ) {
+@media screen and (max-width:1083px ) {
     .menu_navbar{
         display: none;
     }

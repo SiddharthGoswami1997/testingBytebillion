@@ -9,5 +9,7 @@
 .App_byte{
   display: flex;
   flex-direction: column;
+  gap: 0px;
+  
 
 }

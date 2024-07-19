@@ -4,7 +4,9 @@
     align-items: center;
     flex-direction: column;
     gap: 30px;
-    margin: 50px auto;
+    margin-top: 10px ;
+    /* border: #000000 solid 1px; */
+    width: 100%;
 }
 .driving__heading{
     text-align: center;
@@ -39,16 +41,25 @@
         font-size: 30px;
     }
 
-
-
-
-
-/*____________------------ correct this code------------__________ */
-
-
-    .driving__text_box p {
+    .driving__texttwo .driving__textone  {
         font-size: 20px;
         text-align: center;
-        margin-top: 10px;
+        /* margin-top: 10px; */
     }
+}
+@media screen and (max-width:575px )  and (min-width:538px){
+    .driving__main_div {
+        padding: 0 15px;
+    }
+    .driving__heading {
+        font-size: 28px;
+        /* border: 1px solid green ; */
+    }
+
+    .driving__texttwo .driving__textone  {
+        font-size: 20px;
+        text-align: center;
+        
+    }
+
 }
