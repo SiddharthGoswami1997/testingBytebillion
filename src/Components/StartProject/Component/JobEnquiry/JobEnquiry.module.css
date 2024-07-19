@@ -1,12 +1,15 @@
 .filenames_project {
     margin-top: 10px;
   }
+.job_errmsg {
+    color: red;
+    font-size: 14px;
+}
   
   .filename_project {
-    right: 140px;
+    right: 120px;
     font-size: 14px;
-    color: #100f0f;
-    /* margin-top: 5px; */
+    color: green;
     position: absolute;
     bottom: 60px;
   }
@@ -59,6 +62,7 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+    align-items: center;
 
 }
 .formbox1_job{
@@ -136,10 +140,9 @@ height: 40px;
 /* padding-left: 5px; */
 left: 0;
 top:-17px;
-border:.1px solid #888888;
+border:1px solid #aaa6a6;
 border-radius: 4px;
-box-shadow: .1px .1px .1px 0 #888888;
-
+/* box-shadow: .1px .1px .1px 0 #888888; */
 background-color: #F6F6F6;
 }
 .browseinput_project{
@@ -169,17 +172,6 @@ visibility: hidden;
    width: 150px;
    height: 40px;
    box-shadow:0 4px 4px 0 #0000003d ;
-
-
-    /* background-color: #FF7D29;
-   border-radius: 16px;
-   font-weight: bold;
-   color: white;
-  border:  #FF7D29;
-  width: 180px;
-  height: 40px;
-  box-shadow:0 4px rgba(56, 52, 52, 0.331) inset ;
-   */
 }
 @media screen and (max-width:654px) {
     .formbox1_job{
@@ -231,7 +223,17 @@ visibility: hidden;
         font-weight: 700;
         text-align: center;
     }
+
+    .drag_project {
+        display: none;
+    }
+    .filename_project {
+        right: 150px;
+        bottom: 100px;
+    }
 }
+
+
 @media screen and (max-width:420px) {
     .formbox1_job{
         flex-direction: column;
@@ -291,5 +293,9 @@ visibility: hidden;
 
     .formlabel_job{
         font-size: 14px;
-        }
+    }
+    .filename_project {
+        right: 100px;
+        bottom: 95px;
+    }
 }

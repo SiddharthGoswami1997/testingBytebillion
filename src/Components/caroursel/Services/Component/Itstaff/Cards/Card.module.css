@@ -71,3 +71,15 @@
     font-size: 14px;
     text-align: left;
 }
+@media screen and (max-width:420px) {
+    .box_card{
+        width: 300px;
+        height: 294px;
+        padding: 25px 10px 50px 10px;
+    }
+
+    .content_card{
+        font-size: 13px;
+        
+    }
+}

@@ -18,10 +18,10 @@ import 'swiper/css/pagination';
 
 
 // import required modules
-import { Pagination,Autoplay} from 'swiper/modules';
+import { Pagination} from 'swiper/modules';
 import styles from './CareerArea.module.css'
 import Card from './Card/Card'
-import SwiperButton from "./SwiperButton";
+// import SwiperButton from "./SwiperButton";
 
 const CareerArea = () => {
 
@@ -128,15 +128,12 @@ const data = [
           
         
 
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        
         pagination={{
           clickable: true,
         
         }}
-        modules={[Autoplay,Pagination]}
+        modules={[Pagination]}
         className={styles.mySwiper}
       >
 

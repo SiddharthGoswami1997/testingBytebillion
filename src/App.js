@@ -21,44 +21,51 @@ import Privacy from "./Components/Legal/PrivacyPolicy/Privacy";
 import Terms from "./Components/Legal/Termsandcondition/Terms";
 
 // import Testnavbar from "./Testing/Testnavbar";
+
 function App() {
   return (
+    <>
     <div className="App_byte">
       <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+     
       <Routes>
 
+        <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUsPage />} /> 
         <Route path="/services" element={<Services />} />
         <Route path="/career" element={<Career />} />
         <Route path="/contactus" element={<ContactUs />} />
        
-       
-       
-<Route exact path="/startproject/" element={<StartProject/>} >
+       </Routes>
+
+       <Routes>
+        <Route exact path="/startproject/" element={<StartProject/>} >
         <Route exact path="" element={<Project/>}/>
         <Route exact path="general" element={<GenEnquiry/>}/>
         <Route exact path="job" element={<JobEnquiry/>}/>
         </Route>
+      </Routes>
 
-<Route path="/privacy" element={<Privacy/>}>
+      <Routes>
+      <Route path="/privacy" element={<Privacy/>}>
 </Route>
-<Route path="/terms" element={<Terms/>}></Route>
 
-{/* <Route exact path="/startproject/" element={<StartProject/>} >
-       
-        </Route> */}
-        
+<Route path="/terms" element={<Terms/>}></Route>  
 
       </Routes>
-      <Footer />   
+
+
+
+      <Footer /> 
+      
 {/* <Swipercarousel/> */}
    {/* <Testnavbar/>
 {/* <Centerslider/> */}
     </div>
+   
+
+</>
   );
 }
 

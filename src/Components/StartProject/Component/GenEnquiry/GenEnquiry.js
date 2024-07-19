@@ -97,7 +97,7 @@
 
 import React, { useState, useEffect } from "react";
 import styles from "./GenEnquiry.module.css";
-
+import { toast } from 'react-toastify';
 const GenEnquiry = () => {
   const [details, setDetails] = useState({
     name: "",
@@ -180,7 +180,7 @@ const GenEnquiry = () => {
 
     if (Object.keys(newError).length === 0) {
       setFlag(true);
-      alert(`Congrats ${details.name}, your enquiry has been submitted successfully!`);
+      toast.success(`Congrats ${details.name}, Your Enquiry Have Been Submitted Successfully!`);
       setDetails({ name: "", company: "", email: "", phone: "", enquiry: "" });
     } else {
       setFlag(false);
@@ -207,7 +207,7 @@ const GenEnquiry = () => {
                 value={details.name}
                 onChange={handleChange}
               />
-              <span>{error.name}</span>
+              <span className={styles.gen_errmsg}>{error.name}</span>
             </div>
             <div className={styles.formelem_general}>
               <label className={styles.formlabel_general}>Company Name</label>
@@ -219,7 +219,7 @@ const GenEnquiry = () => {
                 value={details.company}
                 onChange={handleChange}
               />
-              <span>{error.company}</span>
+              <span className={styles.gen_errmsg}>{error.company}</span>
             </div>
           </div>
           <div className={styles.formcol1_general}>
@@ -233,7 +233,7 @@ const GenEnquiry = () => {
                 value={details.email}
                 onChange={handleChange}
               />
-              <span>{error.email}</span>
+              <span className={styles.gen_errmsg}>{error.email}</span>
             </div>
             <div className={styles.formelem_general}>
               <label className={styles.formlabel_general}>Phone Number</label>
@@ -245,7 +245,7 @@ const GenEnquiry = () => {
                 value={details.phone}
                 onChange={handleChange}
               />
-              <span>{error.phone}</span>
+             <span className={styles.gen_errmsg}>{error.phone}</span>
             </div>
           </div>
         </div>
@@ -275,7 +275,7 @@ const GenEnquiry = () => {
               value={details.enquiry}
               onChange={handleChange}
             />
-            <span>{error.enquiry}</span>
+           <span className={styles.gen_errmsg}>{error.enquiry}</span>
           </div>
         </div>
         <button type="submit" className={styles.btn_general}>

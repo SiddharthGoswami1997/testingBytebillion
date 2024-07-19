@@ -68,7 +68,7 @@ const Ourvalues = () => {
       </div>
       <div className={styles.cards_ourvalues}>
         {data.map((item, index) => (
-          <div className={styles.card_ourvalues} key={index} >
+          <div className={styles.card_ourvalues} key={index} data-aos='zoom-in'>
             <img
               src={item.url}
               alt={item.alt}

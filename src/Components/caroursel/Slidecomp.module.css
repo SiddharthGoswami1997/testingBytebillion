@@ -130,7 +130,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 300px;
     /* border: #e7810b 2px solid; */
     position: relative;
     animation-play-state: paused;
@@ -257,7 +257,9 @@ animation-duration: 2s;
   }
   
  @media screen and (max-width:1016px) {
-  
+ .complete_{
+  height: 200px;
+ } 
   .box1_{
     width: 160px;
     border-radius: 10px;
@@ -414,7 +416,9 @@ left: 190px; */
 
  }
  @media screen and (max-width:415px) {
-  
+  .complete_{
+    height: 220px;
+   } 
   .box1_{
     display: none;
     /* width: 160px;
@@ -439,9 +443,9 @@ left: 190px; */
 
 
 .box2_{
-  width: 300px;
-  height: 150px;
-   
+  width: 330px;
+  height: 210px;
+   padding: 10px;
    
 }
 
@@ -450,17 +454,17 @@ left: 190px; */
   display: flex;
   flex-direction: column;
   width: 70%;
-  height: 90px;
+  height: 170px;
   align-items: center;
   gap: 10px;
 }
 .h2_box2{
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .p_box2{
  
-  font-size: 9px;
+  font-size: 11px;
   
 }
 .centerslide_box2{

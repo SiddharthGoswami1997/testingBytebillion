@@ -8,6 +8,8 @@
     padding: 0;
     margin: 130px auto;
     box-sizing: border-box;
+    position: relative;
+    top: 50px;
     /* border: 1px firebrick solid; */
     
 }
@@ -138,7 +140,7 @@ gap: 0;
   
 }
 .btn_contact{
-
+   cursor: pointer;
     background-color: #1F3255;
      border-radius: 10px;
      font-weight: bold;
@@ -173,6 +175,7 @@ gap: 0;
         width: 97vw;
     height: 1400px;
         gap: 20px;
+        
     } 
     .address_contact{
         font-size: 14px;

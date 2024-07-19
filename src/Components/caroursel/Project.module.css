@@ -4,10 +4,16 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    padding-bottom:10px ;
     /* justify-content: space-between; */
-    gap: 20px;
+    gap: 40px;
     /* border: red 1px solid; */
     /* margin-top: 150px; */
+}
+.content_project{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .h1_project{
     font-size: 32px;
@@ -18,7 +24,20 @@
     width: 70%;
     margin: 0 auto;
     /* padding-left: 25%; */
-}
-/* @media screen and (max-width:px) {
     
-} */
+}
+.comp_project{
+    /* border: 1px solid yellow; */
+    height: 100%;
+}
+@media screen and (max-width:496px) {
+    .p_project{ 
+    /* border: 1px solid red; */
+        font-size: 16px;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        /* padding-left: 25%; */
+        
+    } 
+}

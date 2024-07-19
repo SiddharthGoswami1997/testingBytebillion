@@ -10,7 +10,7 @@
     padding: 30px;
 
 /* --------------- */
-background-color: #fff;
+/* background-color: #fff; */
     scale: 1.01;
     transition: transform 0.3s ease-in, scale 0.3s ease-in;
     cursor: pointer;
@@ -204,6 +204,86 @@ background-color: #fff;
     }
     .content_card{
         font-size: 16px;
+    }
+   
+}
+@media screen and (max-width:415px) {
+    .box_card{
+
+        width: 300px;
+        height:295px;
+        padding: 20px;
+       gap: 0px;
+        
+    }
+    
+.box_card:nth-child(1):hover {
+    scale: 1;
+    animation: none;
+}
+.box_card:nth-child(2):hover {
+    scale: 1;
+    animation: none;
+}
+.box_card:nth-child(3):hover {
+    scale: 1;
+    animation: none;
+}
+.box_card:nth-child(4):hover {
+    scale: 1;
+    animation: none;
+}
+.box_card:nth-child(5):hover {
+    scale: 1;
+    animation: none;
+}
+   
+    .title_card{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .content_card{
+        font-size: 16px;
+    }
+   
+}
+@media screen and (max-width:380px) {
+    .box_card{
+
+        width: 270px;
+        height:285px;
+        padding: 20px;
+       gap: 0px;
+        
+    }
+    
+.box_card:nth-child(1):hover {
+    scale: 1;
+    animation: none;
+}
+.box_card:nth-child(2):hover {
+    scale: 1;
+    animation: none;
+}
+.box_card:nth-child(3):hover {
+    scale: 1;
+    animation: none;
+}
+.box_card:nth-child(4):hover {
+    scale: 1;
+    animation: none;
+}
+.box_card:nth-child(5):hover {
+    scale: 1;
+    animation: none;
+}
+   
+    .title_card{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .content_card{
+        font-size: 14px;
     }
    
 }

@@ -65,11 +65,12 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      <div className={styles.aboutuscomp_aboutus}>
        <AboutUs />
     <Projects />
     <Testimonial/>
        <FAQ />
+      </div>
     </div>
   );
 };

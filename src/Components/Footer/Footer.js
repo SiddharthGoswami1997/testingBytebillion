@@ -4,6 +4,7 @@ import Colsecond from './Footerchild/Colsecond'
 import Colthird from './Footerchild/Colthird'
 import Colfourth from './Footerchild/Colfourth'
 import styles from './Footer.module.css'
+import {Link} from 'react-router-dom'
 const Footer = () => {
   return (
     <div className={styles.container_footer}>
@@ -14,7 +15,7 @@ const Footer = () => {
     <Colfourth/>  
       </div>
       <div className={styles.copyright_footer}>
-        <p>© 2022-2023 <a href='/'>Byte Billion™ </a>. All Rights Reserved.</p>
+        <p>© 2023-2024 <Link className={styles.linktext_footer} to={'/'}>Byte Billion™ </Link>. All Rights Reserved.</p>
         </div>  
     </div>
   )

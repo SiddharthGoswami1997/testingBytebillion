@@ -50,17 +50,10 @@
 
 }
 
-/* @media screen and (max-width:826px) {
-    .container_staff{
-        height:100% 
-    
+@media screen and (max-width:420px) {
+    .h1_staff{
+        font-size: 1.6rem;
+   
     }
-    .box_card{
-       
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-       justify-content: space-around;
-    } 
 
-} */
+}
