@@ -31,11 +31,18 @@
     justify-content: center;
     margin-left: -100px;
 }
-.ourservices__circle {
+.ourservices__circle1 {
     height: 300px;
     width: 300px;
     border-radius: 100%;
     background-color: #008DFF;
+    position: relative;
+  }
+.ourservices__circle2 {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background-color: white;
     position: relative;
   }
 
