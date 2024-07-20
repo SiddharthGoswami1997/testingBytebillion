@@ -84,11 +84,13 @@ const GenEnquiry = () => {
     if (Object.keys(newError).length === 0) {
       setFlag(true);
       toast.success(`Congrats ${details.name}, Your Enquiry Have Been Submitted Successfully!`);
+      toast.success(`Congrats ${details.name}, Your Enquiry Have Been Submitted Successfully!`);
       setDetails({ name: "", company: "", email: "", phone: "", enquiry: "" });
     } else {
       setFlag(false);
     }
   };
+
   return (
     <section className={styles.container_general}>
       <div className={styles.headingdiv_general}>
@@ -97,6 +99,7 @@ const GenEnquiry = () => {
           Reach out to us for all your enquiries
         </p>
       </div>
+
       <form className={styles.form_general} onSubmit={handleSubmit}>
         <div className={styles.formbox1_general}>
           <div className={styles.formcol1_general}>
@@ -111,6 +114,7 @@ const GenEnquiry = () => {
                 onChange={handleChange}
               />
               <span className={styles.gen_errmsg}>{error.name}</span>
+              <span className={styles.gen_errmsg}>{error.name}</span>
             </div>
             <div className={styles.formelem_general}>
               <label className={styles.formlabel_general}>Company Name*</label>
@@ -122,6 +126,7 @@ const GenEnquiry = () => {
                 value={details.company}
                 onChange={handleChange}
               />
+              <span className={styles.gen_errmsg}>{error.company}</span>
               <span className={styles.gen_errmsg}>{error.company}</span>
             </div>
           </div>
@@ -136,6 +141,7 @@ const GenEnquiry = () => {
                 value={details.email}
                 onChange={handleChange}
               />
+              <span className={styles.gen_errmsg}>{error.email}</span>
               <span className={styles.gen_errmsg}>{error.email}</span>
             </div>
             <div className={styles.formelem_general}>

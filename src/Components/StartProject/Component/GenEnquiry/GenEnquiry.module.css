@@ -34,6 +34,7 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    align-items: center;
 
 }
 .formbox1_general{
@@ -74,7 +75,6 @@ padding: 20px;
     flex-direction: column;
     gap: 10px;
  
-
 }
 .textinput_general{
     border-radius: 4px;
