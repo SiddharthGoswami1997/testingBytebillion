@@ -6,6 +6,7 @@
   font-family: "Noto Sans", sans-serif;
   /* box-sizing: border-box; */
 }
+
 .App_byte{
   display: flex;
   flex-direction: column;
