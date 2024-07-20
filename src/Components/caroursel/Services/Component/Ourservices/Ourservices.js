@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
 import styles from "./Ourservices.module.css";
-import AOS from 'aos'
-import "aos/dist/aos.css"
-
 const data = [
   { name: "Web Development", image: '/Images/Ourservices/web_development.png', alt: 'Web Development', content: "Web development involves creating, building, and maintaining websites and web applications. Developers use frameworks and tools like React, Angular, Vue.js, Node.js, and Django to streamline the development process and create dynamic, interactive web experiences." },
   { name: "MERN Stack",image: '/Images/Ourservices/mern_stacknew.png', alt: 'Mern Stack', content: "The MERN stack is a popular software stack used for building dynamic web applications. It's an acronym that stands for MongoDB, Express.js, React.js, and Node.js. Each component of the stack plays a specific role in the development process." },
@@ -18,16 +15,13 @@ const Ourservices = () => {
   const[activeimage, setActiveimage] = useState(data[0].image);
 
   const handleClick = (index, image) => {
+    console.log(index);
     setActiveindex(index === activeindex ? null : index);
+    
     setActiveimage(image);
   };
-  const [bluecircle,setBlueCircle] = useState(true)
-
-  useEffect(()=> {
-    AOS.init({duration: "1500"})
-  },[])
-
-  return (
+  const [bluecircle,setBlueCircle] = useState(true);
+return (
     <div className={styles.ourservices__main_box}>
       <h2 className={styles.ourservices__heading}>Our Services </h2>
       <p className={styles.ourservices__descripation}>
@@ -37,7 +31,7 @@ const Ourservices = () => {
 
       <div className={styles.ourservices__box}>
         <div className={styles.ourservices__left_box}>
-          <div className={bluecircle ? styles.ourservices__circle1 : styles.ourservices__circle2}  >
+          <div className={activeindex === 0 || bluecircle ? styles.ourservices__circle1 : styles.ourservices__circle2}  >
             <img src={activeimage} alt="Active" className={styles.ourservices__image} />
           </div>
         </div>
@@ -45,9 +39,9 @@ const Ourservices = () => {
         <div className={styles.ourservices__right_box}>
           {data.map((item, index) => (
             <div key={index} className={styles.ourservices__serviceItem} >
-              <div className={styles.ourservices__innerserviceitem} onClick={() => handleClick(index, item.image)} >
+              <div className={styles.ourservices__innerserviceitem} onClick={() => handleClick(index, item.image) && activeindex === 0 ? setBlueCircle(true) : setBlueCircle(false)}>
               <h4  className={styles.ourservices__name}>{item.name}</h4>
-               <span className={`${styles.plus_icon} ${activeindex === index ? styles.active : ''}`} onClick={() =>(setBlueCircle(false))}></span>
+               <span className={`${styles.plus_icon} ${activeindex === index ? styles.active : ''}`} ></span>
               </div>
               {activeindex === index && <p className={styles.ourservices__details_content}>{item.content}</p>}
             </div>

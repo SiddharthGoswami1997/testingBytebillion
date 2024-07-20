@@ -109,13 +109,13 @@ const ContactUs = () => {
               {" "}
               <i class="fa-solid fa-envelope"></i>
             </div>
-            <p className={styles.address_contact}>infokaromanage@gmail.com</p>
+            <p className={styles.address_contact}>iamganeshpatidar@gmail.com</p>
           </div>
           <div className={styles.contact_contact}>
             <div className={styles.logo_contact}>
               <i class="fa-solid fa-phone-volume"></i>
             </div>
-            <p className={styles.address_contact}>7566325980</p>
+            <p className={styles.address_contact}>7987265628</p>
           </div>
         </div>
         <div>
@@ -143,7 +143,7 @@ const ContactUs = () => {
         </div>
         <form className={styles.form_contact} >
           <div className={styles.inputbox_contact}>
-            <label className={styles.label_contact}>Name</label>
+            <label className={styles.label_contact}>Name*</label>
             <input
               type="text"
               placeholder="Enter name"
@@ -157,7 +157,7 @@ const ContactUs = () => {
             <span className={styles.er_contact}>{error.name}</span>
           </div>
           <div className={styles.inputbox_contact}>
-            <label className={styles.label_contact}>Email</label>
+            <label className={styles.label_contact}>Email*</label>
             <input
               type="email"
               placeholder="Enter email"
@@ -171,7 +171,7 @@ const ContactUs = () => {
             <span className={styles.er_contact}>{error.email}</span>
           </div>
           <div className={styles.inputbox_contact}>
-            <label className={styles.label_contact}>Phone Number</label>
+            <label className={styles.label_contact}>Phone Number*</label>
             <input
               type="text"
               placeholder="Enter phone number"
@@ -186,7 +186,7 @@ const ContactUs = () => {
             <span className={styles.er_contact}>{error.phone}</span>
           </div>
           <div className={styles.inputbox_contact}>
-            <label className={styles.label_contact}>Message</label>
+            <label className={styles.label_contact}>Message*</label>
             <textarea
               type="text"
               placeholder={`Write your message here`}

@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './Hiring.module.css'
 import AnimatedSerial from './AnimatedSerial/AnimatedSerial'
 
@@ -17,6 +16,8 @@ const Hiring = () => {
     {value:"Hire interns based on their performance & passion."},
     {value:"6 months provides challenging real-time projects & team-building skills."},
   ]
+
+
   return (
     <section className={styles.container_benefits}>
       <div className={styles.heading_benefits}>

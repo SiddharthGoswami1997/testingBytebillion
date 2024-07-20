@@ -81,7 +81,7 @@ const Privacy = () => {
 
   <div className={styles.box10}>
     <h3 className={styles.h3}>10. Contact Information</h3>
-    <p className={styles.paragraph}>If you have questions about this policy or our practices related to WhatsApp Business Services, please contact us at infokaromanage@gmail.com.</p>
+    <p className={styles.paragraph}>If you have questions about this policy or our practices related to WhatsApp Business Services, please contact us at iamganeshpatidar@gmail.com.</p>
   </div>
   
   <div className={styles.box11}>
