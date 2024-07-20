@@ -21,6 +21,7 @@ const Ourservices = () => {
     setActiveindex(index === activeindex ? null : index);
     setActiveimage(image);
   };
+  const [bluecircle,setBlueCircle] = useState(true)
 
   useEffect(()=> {
     AOS.init({duration: "1500"})
@@ -36,17 +37,17 @@ const Ourservices = () => {
 
       <div className={styles.ourservices__box}>
         <div className={styles.ourservices__left_box}>
-          <div className={styles.ourservices__circle} data-aos="fade-up">
+          <div className={bluecircle ? styles.ourservices__circle1 : styles.ourservices__circle2}  >
             <img src={activeimage} alt="Active" className={styles.ourservices__image} />
           </div>
         </div>
 
         <div className={styles.ourservices__right_box}>
           {data.map((item, index) => (
-            <div key={index} className={styles.ourservices__serviceItem} data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <div className={styles.ourservices__innerserviceitem} onClick={() => handleClick(index, item.image)}>
+            <div key={index} className={styles.ourservices__serviceItem} >
+              <div className={styles.ourservices__innerserviceitem} onClick={() => handleClick(index, item.image)} >
               <h4  className={styles.ourservices__name}>{item.name}</h4>
-               <span className={`${styles.plus_icon} ${activeindex === index ? styles.active : ''}`}></span>
+               <span className={`${styles.plus_icon} ${activeindex === index ? styles.active : ''}`} onClick={() =>(setBlueCircle(false))}></span>
               </div>
               {activeindex === index && <p className={styles.ourservices__details_content}>{item.content}</p>}
             </div>
